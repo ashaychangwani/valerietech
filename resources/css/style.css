@@ -375,7 +375,7 @@ hr{
 
 .section-testimonials{
     padding: 80px 0;
-    height: 500px;
+    height: 480px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(img/testimonials-banner.jpg);
     background-size: cover;
     background-position: center;
@@ -406,3 +406,17 @@ blockquote:before{
     font-size: 500%;
     line-height: 145%;
 }
+
+
+
+
+
+/*----------------------------------*/
+/*  CONTACT */
+/*----------------------------------*/
+
+.section-contact{
+    height: 500px;
+}
+
+
