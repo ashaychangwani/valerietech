@@ -20,6 +20,8 @@ html{
     font-size: 18px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
+    word-spacing: 2px;
+    line-height: 1.3;
 }
 
 p{
@@ -82,9 +84,10 @@ h3{
 header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/banner-1.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     
 }
 
@@ -217,7 +220,7 @@ header{
 
 
 .section-mission{
-    margin: 80px auto 65px 0;
+    margin: 80px auto 60px 0;
     text-align: center;
 }
 
@@ -232,7 +235,7 @@ header{
 /*----------------------------------*/
 
 .section-why-us{
-    padding: 50px 0 80px 0;
+    padding: 80px 0;
     background-color: #fcfcfc;
 }
 
@@ -249,7 +252,7 @@ hr{
     border: 0;
     width: 20%;
     height: 2px;
-    margin: 0 auto 25px auto;
+    margin: 20px auto 25px auto;
     background-image: linear-gradient(to right, rgb(27, 156, 252, 0), rgb(27, 156, 252, 0.75), rgb(27, 156, 252, 0));
 }
 
@@ -323,9 +326,6 @@ hr{
     padding: 5px;
 }
 
-.section-facilities hr{
-    margin-top: 20px;
-}
 
 .section-facilities h3{
     text-align: left;
@@ -343,6 +343,7 @@ hr{
 
 .learn-more{
     font-size: 130%;
+    margin-top: 20px;
     font-weight: 300;
     text-align: center;
     word-spacing: 2px;
@@ -350,7 +351,7 @@ hr{
 }
 
 .learn-row{
-    margin: 25px auto 80px auto;
+    margin: 15px auto 80px auto;
     text-align: center;
 }
 
@@ -364,4 +365,44 @@ hr{
     display: block;
     color: #1b9cfc;
     margin-bottom: 10px;
+}
+
+
+
+/*----------------------------------*/
+/*  TESTIMONIALS */
+/*----------------------------------*/
+
+.section-testimonials{
+    padding: 80px 0;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(img/testimonials-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    
+}
+
+blockquote{
+    margin-top: 40px;
+    padding: 2%;
+    font-style: italic;
+    position: relative;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before{
+    content: "\201C";
+    position: absolute;
+    display: block;
+    top: -40%;
+    left: -3px;
+    font-size: 500%;
+    line-height: 145%;
 }
