@@ -112,7 +112,7 @@ input[type=submit],
 .btn:link{
     display: inline-block;
     margin: 20px 40px 0 0px;
-    padding: 15px 25px;
+    padding: 10px 22px;
     text-decoration: none;
     font-weight: 300;
     color: #fff;
@@ -120,7 +120,6 @@ input[type=submit],
     border: 1px solid #1B9CFC;
     text-align: center;
     transition: border 0.3s, background-color 0.3s, color 0.3s;
-    
 }
 
 
@@ -444,7 +443,7 @@ select{
 }
 
 input[type=submit]{
-    width: 150px;
+    width: 125px;
     margin-top: 25px;
 }
 
