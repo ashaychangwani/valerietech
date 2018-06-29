@@ -361,7 +361,46 @@ hr{
 /*  PHOTO GRID */
 /*----------------------------------*/
 
+ 
+.section-grid{
+    padding: 0;
+    height: auto;
+    overflow: auto;
+}
+.showcase{
+    list-style: none;
+    width: 100%;
+}
 
+.showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.showcase-photo{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.showcase-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+
+.showcase-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
 
 /*----------------------------------*/
 /*  FACILITIES */
