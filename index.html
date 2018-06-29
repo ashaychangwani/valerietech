@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://unpkg.com/ionicons@4.2.1/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -38,15 +41,15 @@
                 <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/hero-image.jpg')"></div>
             
                 
-                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-1.png')"></div>
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-1.jpg')"></div>
                 
-                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-2.png')"></div>
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-2.jpg')"></div>
                 
-                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-3.png')"></div>
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-3.jpg')"></div>
                 
-                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-4.png')"></div>
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-4.jpg')"></div>
                 
-                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-5.png')"></div>
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/banner-5.jpg')"></div>
                 
                 <div class="hero-text-box">
                         <h1 class="hero-text fade">
@@ -75,7 +78,7 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-            <div style="text-align: center;margin-top: -100px;position: relative; z-index: 100;background-color: rgba(0, 0, 0, 0)">
+            <div class="dots">
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span> 
@@ -84,7 +87,7 @@
                 <span class="dot" onclick="currentSlide(6)"></span> 
             </div>
         </header>
-        <section class="section-mission">
+        <section class="section section-mission">
             <div class="row">
                 <div class="mission">
                     <h3>
@@ -157,7 +160,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section-facilities">
+        <section class="section section-facilities">
             <div class="row">
                 <h2>
                     What we're offering
@@ -188,10 +191,10 @@
                 <div class="col span-1-of-4 box">
                     <i class="icon ion-ios-speedometer icon-big"></i>
                     <h3>
-                        Flaunt it
+                        next gen
                     </h3>
                     <p>
-                        We deliver the most and the best. Get the most bang for your buck with a safe and reliable overclock. Experience the best aesthetic with some dope AF RGB lighting.
+                        We deliver the most and the best. Get the most bang for your buck with a safe and reliable overclock. Experience the best aesthetics with some dope AF RGB lighting.
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
@@ -213,7 +216,7 @@
                 <a class="btn btn-ghost btn-learn" href="#">Facilties and FAQ</a>                
             </div>
         </section>
-        <section class="section-testimonials">
+        <section class="section section-testimonials">
             <div class="row">
                 <h2>
                     What our clients are saying
@@ -253,7 +256,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-contact">
+        <section class="section section-contact">
             <div class="row">
                 <h2>
                     We're happy to hear from you
@@ -296,7 +299,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col span-1-of-3">
+                        <div class="col span-1-of-3 blank">
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">

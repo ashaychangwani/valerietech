@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -41,6 +42,10 @@ p{
     margin: 0 auto;
 }
 
+.section{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
 
 
 /*----------------------------------*/
@@ -81,11 +86,15 @@ h3{
 /*----------------------------------*/
 
 
+header{
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
 
 .hero-text-box{
     position: absolute;
-    width 1140px;
-    margin-left: 25px;
+    width 1240px;
     top: 45%;
     left: 12%;
 }
@@ -93,12 +102,8 @@ h3{
 .hero-text {
     position: relative;
     z-index: 0;
-    display: none;
-}
-header{
-    height: 100vh;
-    position: relative;
-    background-color: #000;
+    width: 100%;
+    display: none; 
 }
 
 .banner-container{
@@ -166,6 +171,14 @@ header h3{
   transition: 0.6s ease;
 }
 
+.dots{
+    text-align: center;
+    margin-top: -100px;
+    position: relative; 
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .active, .dot:hover {
   background-color: #0379d0;
 }
@@ -176,12 +189,10 @@ header  .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
-  to {opacity: 1}
+  to {opacity: 1 }
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1 }
@@ -205,6 +216,7 @@ input[type=submit],
     border-radius: 200px;
     border: 1px solid #1B9CFC;
     text-align: center;
+    -webkit-transition: border 0.3s, background-color 0.3s, color 0.3s;
     transition: border 0.3s, background-color 0.3s, color 0.3s;
 }
 
@@ -291,6 +303,7 @@ input[type=submit]:active,
     text-transform: uppercase;
     padding: 8px 0;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
 
@@ -312,7 +325,6 @@ input[type=submit]:active,
 
 
 .section-mission{
-    margin: 70px auto 60px 0;
     text-align: center;
 }
 
@@ -327,7 +339,7 @@ input[type=submit]:active,
 /*----------------------------------*/
 
 .section-why-us{
-    padding: 70px 0;
+    padding: 70px 0 60px 0;
     background-color: #fcfcfc;
 }
 
@@ -345,6 +357,7 @@ hr{
     width: 30%;
     height: 2px;
     margin: 20px auto 25px auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgb(27, 156, 252, 0)), color-stop(rgb(27, 156, 252, 0.75)), to(rgb(27, 156, 252, 0)));
     background-image: linear-gradient(to right, rgb(27, 156, 252, 0), rgb(27, 156, 252, 0.75), rgb(27, 156, 252, 0));
 }
 
@@ -363,6 +376,8 @@ hr{
 
  
 .section-grid{
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
     height: auto;
     overflow: auto;
@@ -391,13 +406,18 @@ hr{
     opacity: 0.7;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 
 
 .showcase-photo img:hover{
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
     opacity: 1;
 }
@@ -407,10 +427,6 @@ hr{
 /*----------------------------------*/
 
 
-.section-facilities{
-    margin: 70px auto 0 auto;
-}
-
 .section-facilities div{
     padding: 5px;
 }
@@ -418,7 +434,7 @@ hr{
 
 .section-facilities h3{
     text-align: left;
-    font-size: 118%;
+    font-size: 114%;
     text-transform: uppercase;
     margin-bottom: 15px;
     line-height: 1.15;
@@ -463,8 +479,9 @@ hr{
 /*----------------------------------*/
 
 .section-testimonials{
-    padding: 70px 0;
+    padding: 70px 30px;
     height: 480px;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.65)),to(rgba(0, 0, 0, 0.65))), url(img/testimonials-banner.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(img/testimonials-banner.jpg);
     background-size: cover;
     background-position: center;
@@ -503,12 +520,6 @@ blockquote:before{
 /*----------------------------------*/
 /*  CONTACT */
 /*----------------------------------*/
-
-
-
-.section-contact{
-    margin: 70px auto;
-}
 
 .contact-form{
     width: 60%;
@@ -590,6 +601,7 @@ footer row{
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.3s;
     transition: color 0.3s; 
 }
 
@@ -617,6 +629,7 @@ footer p{
 .ion-logo-twitter,
 .ion-logo-googleplus,
 .ion-logo-isntagram{
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -635,6 +648,4 @@ footer p{
 .ion-logo-instagram:hover{
     color: #fb3958;
 }
-
-
-
+ 
