@@ -273,11 +273,9 @@ input[type=submit]:active,
 /*  MAIN-NAVIGATION */
 /*----------------------------------*/
 
-
-
-
 .logo{
     margin-top: 20px;
+    margin-left: 20px;
     height: 100px;
     width: auto;
     float: left;
@@ -314,8 +312,65 @@ input[type=submit]:active,
     border-bottom: 2px solid #1B9CFC;
 }
 
+/*Mobile nav*/
+.mobile-nav-icon{
+    float: right;
+    margin: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i{
+    font-size: 280%;
+    color: white;
+}
 
 
+
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.98);
+    height: auto;
+    box-shadow: 0 2px 2px #efefef;
+    transition: 0.75s ease-in-out;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    color: #555;
+    padding: 16px 0;
+}
+
+.logo-black{
+    margin: 10px 10px;
+    height: 50px;
+    width: auto;
+    float: left;
+    display: none;
+}
+
+.sticky-nav .logo-black{
+    display: block;
+}
+.sticky-nav .logo{
+    display: none;
+}
+
+.sticky-nav .main-nav{
+    padding-top: 0;
+    margin-top: 23px;
+}
+
+.sticky-nav .main-nav li{
+    margin-top: 0;
+}
+
+
+.ion-ios-close{
+    margin-right: 8px;
+}
 
 /*----------------------------------*/
 /*  MISSION */
@@ -648,4 +703,17 @@ footer p{
 .ion-logo-instagram:hover{
     color: #fb3958;
 }
- 
+
+
+
+
+/*----------------------------------*/
+/*  ANIMATIONS */
+/*----------------------------------*/
+
+.js--wp-1{
+    opacity: 0;
+}
+.js--wp-1.animated{
+    opacity: 1;
+}
