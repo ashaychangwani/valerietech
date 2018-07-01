@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+		<link rel="stylesheet" type="text/css" href="jqueryui1.7/development-bundle/themes/smoothness/ui.core.css">
+		<link rel="stylesheet" type="text/css" href="jqueryui1.7/development-bundle/themes/smoothness/ui.theme.css">
+		<link rel="stylesheet" type="text/css" href="jqueryui1.7/development-bundle/themes/smoothness/ui.progressbar.css">
+		<link rel="stylesheet" type="text/css" href="regForm.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jQuery UI Progress Bar</title>
+  </head>
+  <body>
+	  <div class="form-container ui-helper-clearfix ui-corner-all">
+			<h1>Registration Form</h1>
+			<p>Progress:</p>
+	    <div id="progress"></div><label id="amount">0%</label>
+			<form action="serverScript.php">
+				<div id="panel1" class="form-panel">
+				  <h2>Personal Details</h2>
+					<fieldset class="ui-corner-all">
+						<label>Name:</label><input type="text">
+						<label>D.O.B:</label><input type="text">
+						<label>Choose password:</label><input type="password">
+						<label>Confirm password:</label><input type="password">
+					</fieldset>
+				</div>
+				<div id="panel2" class="form-panel ui-helper-hidden">
+				  <h2>Contact Details</h2>
+					<fieldset class="ui-corner-all">
+						<label>Email:</label><input type="text">
+						<label>Telephone:</label><input type="text">
+						<label>Address:</label><textarea rows="3" cols="25"></textarea>
+					</fieldset>
+				</div>
+				<div id="thanks" class="form-panel ui-helper-hidden">
+				  <h2>Registration Complete</h2>
+					<fieldset class="ui-corner-all">
+  					<p>Thanks for registering!</p>
+					</fieldset>
+				</div>
+				<button id="next">Next &gt;</button><button id="back" disabled="disabled">&lt; Back</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="jqueryui1.7/development-bundle/jquery-1.3.2.js"></script>
+		<script type="text/javascript" src="jqueryui1.7/development-bundle/ui/ui.core.js"></script>
+		<script type="text/javascript" src="jqueryui1.7/development-bundle/ui/ui.progressbar.js"></script>
+		<script type="text/javascript">
+		  $(function() {
+			  
+				//call progress bar constructor
+			  $("#progress").progressbar({ change: function() {
+				
+				  //update amount label when value changes
+				  $("#amount").text($("#progress").progressbar("option", "value") + "%");
+				} });
+				
+				//set click handler for next button
+				$("#next").click(function(e) {
+				  
+					//stop form submission
+					e.preventDefault();
+				  
+					//look at each panel
+				  $(".form-panel").each(function() {
+					  
+						//if it's not the first panel enable the back button
+            ($(this).attr("id") != "panel1") ? null : $("#back").attr("disabled", "");
+																		
+						//if the panel is visible fade it out
+					  ($(this).hasClass("ui-helper-hidden")) ? null : $(this).fadeOut("fast", function() {
+						  
+							//add hidden class and show the next panel
+							$(this).addClass("ui-helper-hidden").next().fadeIn("fast", function() {
+							  
+								//if it's the last panel disable the next button
+    						($(this).attr("id") != "thanks") ? null : $("#next").attr("disabled", "disabled");	
+																
+								//remove hidden class from new panel
+								$(this).removeClass("ui-helper-hidden");
+								
+								//update progress bar
+								$("#progress").progressbar("option", "value", $("#progress").progressbar("option", "value") + 50);
+							});
+						});
+					});
+				});			
+				
+				//set click handler for back button
+				$("#back").click(function(e) {
+				  
+					//stop form submission
+					e.preventDefault();
+					
+					//look at each panel
+				  $(".form-panel").each(function() {
+					  					
+					  //if it's not the last panel enable the next button
+						($(this).attr("id") != "thanks") ? null : $("#next").attr("disabled", "");
+					  
+						//if the panel is visible fade it out
+					  ($(this).hasClass("ui-helper-hidden")) ? null : $(this).fadeOut("fast", function() {
+						  
+							//add hidden class and show the next panel
+							$(this).addClass("ui-helper-hidden").prev().fadeIn("fast", function() {
+							
+							  //if it's the first panel disable the back button
+    						($(this).attr("id") != "panel1") ? null : $("#back").attr("disabled", "disabled");
+										
+								//remove hidden class from new panel
+								$(this).removeClass("ui-helper-hidden");
+								
+								//update progress bar
+								$("#progress").progressbar("option", "value", $("#progress").progressbar("option", "value") - 50);
+							});
+						});
+					});
+				});					
+			});
+		</script>
+  </body>
+</html>
