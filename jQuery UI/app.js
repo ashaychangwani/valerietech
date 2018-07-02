@@ -31,7 +31,9 @@ document.querySelector('#next').addEventListener('click', function(){
 	{
 		if(priority1 === "gaming" || priority2 === "gaming" || priority3 === "gaming")
 		{
-			$(".games").attr("disabled", "");
+			$(".games1").attr("disabled", "");
+			$(".games2").attr("disabled", "");
+			$(".games3").attr("disabled", "");
 			
 			game1 = document.querySelector('.games1').selectedIndex;
 			game2 = document.querySelector('.games2').selectedIndex;
@@ -46,7 +48,9 @@ document.querySelector('#next').addEventListener('click', function(){
 		}
 		else
 		{
-			$(".games").attr("disabled", "disabled");
+			$(".games1").attr("disabled", "disabled");
+			$(".games2").attr("disabled", "disabled");
+			$(".games3").attr("disabled", "disabled");
 		}
 		
 		software1 = document.querySelector('.softwares1').selectedIndex;
