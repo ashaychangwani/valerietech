@@ -1,4 +1,9 @@
-h1, h2 { font-family:Georgia; font-size:140%; margin-top:0; }
+h1, h2
+{
+	font-family:Georgia;
+	font-size:140%;
+	margin-top:0;
+}
 h2
 { 
 	font-size:100%;
@@ -8,7 +13,7 @@ h2
 }
 .form-container
 {
-	width:400px;
+	width:800px;
 	margin:0 auto;
 	position:relative;
 	font-family:Verdana;
@@ -19,12 +24,12 @@ h2
 }
 .form-panel
 {
-	width:400px;
+	width:600px;
 	height:241px;
 }
 .form-panel fieldset
 {
-	width:397px;
+	width:700px;
 	height:170px;
 	margin:0 auto;
 	padding:22px 0 0;
