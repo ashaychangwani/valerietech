@@ -226,7 +226,10 @@ input[type=submit]{
     background-color: #1B9CFC;
     
 }
-
+.btn-learn:link,
+.btn-learn:visited{
+    color: #1b9cfc;
+}
 
 input[type=submit]:hover,
 input[type=submit]:active,
@@ -654,12 +657,12 @@ footer p{
     text-align: center;
     font-size: 110%;
     margin-top: 15px;
+    line-height: 150%;
 }
 
 .social-icons li a:link,
 .social-icons li a:visited{
     font-size: 160%;
-    
 }
 
 .ion-logo-facebook,

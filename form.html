@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style-form.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href="https://unpkg.com/ionicons@4.2.1/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <title>Valerie Tech</title>
+    </head>
+      <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="../resources/img/logo.png" alt="Logo" class="logo-black">
+                    <img src="../resources/img/logo-white.png" alt="Logo" class="logo">
+                    <ul class="main-nav js--main-nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="facilities.html">Facilities and FAQs</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact</a>
+                        </li>                        
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-ios-menu"></i></a>
+                </div>
+            </nav>
+            <div class="banner-container">
+                
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/css/img/hero-image.jpg')"></div>
+                
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../resources/css/img/banner-1.jpg')"></div>
+                
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../resources/css/img/banner-2.jpg'); background-position: center -150px;"></div>
+                
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../resources/css/img/banner-3.jpg'); background-position: center -550px;"></div>
+                
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../resources/css/img/banner-4.jpg'); background-position: center -300px;"></div>
+                
+                <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('../resources/css/img/banner-5.jpg'); background-position: center -150px;"></div>
+                
+                <div class="hero-text-box">
+                        <h1 class="hero-text fade">
+                            Don't just build to own.<br>Build to Brag.
+                        </h1>
+                        <h1 class="hero-text fade">
+                            Tight budget but want to pwn some noobs?<br>We’ve got you covered.
+                        </h1>
+                        <h1 class="hero-text fade">
+                            Customize. Personalize. Maximize.<br>A build to suit all your needs.
+                        </h1>
+                        <h1 class="hero-text fade">
+                            Want a Mac but love your kidney?<br>We might have the solution for you!
+                        </h1>
+                        <h1 class="hero-text fade">
+                            An elite experience at your workplace.<br>Better performance at a lower price.
+                        </h1>
+                        <h1 class="hero-text fade">
+                            Spend less time configuring,<br>more time mining.
+                        </h1>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+        </header>
+        
+        <section class="section section-contact js--section-contact" id="contact">
+            <div class="row">
+                <h2>
+                    We're happy to hear from you
+                </h2>
+                <h3>
+                    Just shoot us a message &mdash; You won't be disappointed. We promise!
+                </h3>
+                <hr>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends">Friends and Family</option>
+                                <option value="recommendation" selected>Recommendation</option>
+                                <option value="search-engine">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3 blank">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Facilities</a>
+                        </li>
+                        <li>
+                            <a href="#">Build a PC</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><i class="icon ion-logo-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon ion-logo-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon ion-logo-googleplus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon ion-logo-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    team@valerietech.in<br>+91-(982)099-0356<br>Designed and created by the Valerie Tech team
+                </p>
+            </div>
+        </footer>
+    </body>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/function-form.js"></script>
+</html>
