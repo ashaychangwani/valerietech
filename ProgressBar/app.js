@@ -23,12 +23,10 @@ document.getElementById('next').addEventListener('click', function(e)
 	}
 	if(k == 2)
 	{
-		console.log(priority1);
 		p2();
 	}
 	if(k == 3)
 	{
-		console.log(priority1);
 		p3();
 	}
 	if(k == 4)
@@ -59,7 +57,7 @@ document.getElementById('back').addEventListener('click', function(e)
 	if(k == 1)
 	{
 		p1();
-	}	
+	}
 	if(k == 2)
 	{
 		p2();
@@ -70,6 +68,7 @@ document.getElementById('back').addEventListener('click', function(e)
 	}
 	progressBarWidth(k);
 });
+
 var p1 = function()
 {
 
@@ -80,76 +79,71 @@ var p1 = function()
 };
 
 var p2 = function()
-{
-
-	priority1 = document.querySelector('.priority1').selectedIndex;
-	priority2 = document.querySelector('.priority2').selectedIndex;
-	priority3 = document.querySelector('.priority3').selectedIndex;
-
-	priority1 = document.getElementsByTagName("option")[priority1].value;
-	priority2 = document.getElementsByTagName("option")[priority2].value;
-	priority3 = document.getElementsByTagName("option")[priority3].value;
-
-	otherPriority = document.getElementById('otherPriority').value;
+{	
+	//document.getElementById('otherPriority').disabled = true;
+	
+	document.querySelector('.priority1').addEventListener('change', function(){
+			priority1 = document.querySelector('.priority1').selectedIndex;
+		});
+		
+		document.querySelector('.priority2').addEventListener('change', function(){
+			priority2 = document.querySelector('.priority2').selectedIndex;
+			checkPriority(priority2);
+		});
+		
+		document.querySelector('.priority3').addEventListener('change', function(){
+			priority3 = document.querySelector('.priority3').selectedIndex;
+			checkPriority(priority3);
+		});
 };
 
 var p3 = function()
 {
+	if(priority1 === 2 || priority2 === 2 || priority3 === 2)
+	{
+		document.querySelector(".games1").disabled = false;
+		document.querySelector(".games2").disabled = false;
+		document.querySelector(".games3").disabled = false;
+		//document.querySelector(".otherGame").disabled = true;
+		
+		document.querySelector('.games1').addEventListener('change', function(){
+			game1 = document.querySelector('.games1').selectedIndex;
+		});
+		
+		document.querySelector('.games2').addEventListener('change', function(){
+			game2 = document.querySelector('.games2').selectedIndex;
+			checkGame(game2);
+		});
+		
+		document.querySelector('.games3').addEventListener('change', function(){
+			game3 = document.querySelector('.games3').selectedIndex;
+			checkGame(game3);
+		});
+		
+	}
+	else
+	{
+		document.querySelector(".games1").disabled = true;
+		document.querySelector(".games2").disabled = true;
+		document.querySelector(".games3").disabled = true;
+		document.querySelector(".otherGame").disabled = true;
+	}
+
+	//document.getElementById('otherSoftware').disabled = true;
 	
-	console.log(priority1);
-	if(priority1 === "gaming" || priority2 === "gaming" || priority3 === "gaming")
-	{
-$(".games1").attr("disabled", "");
-$(".games2").attr("disabled", "");
-$(".games3").attr("disabled", "");
-
-game1 = document.querySelector('.games1').selectedIndex;
-game2 = document.querySelector('.games2').selectedIndex;
-game3 = document.querySelector('.games3').selectedIndex;
-
-game1 = document.getElementsByTagName("option")[game1].value;
-game2 = document.getElementsByTagName("option")[game2].value;
-game3 = document.getElementsByTagName("option")[game3].value;
-
-$(".otherGame").attr("disabled", "disabled");
-
-if(game2 === "none" || game3 === "none")
-{
-	$(".otherGame").attr("disabled", "");
-	otherGame = document.getElementById('otherGame').value;
-}
-else
-{
-	$(".otherGame").attr("disabled", "disabled");
-}
-	}
-	else
-	{
-$(".games1").attr("disabled", "disabled");
-$(".games2").attr("disabled", "disabled");
-$(".games3").attr("disabled", "disabled");
-$(".otherGame").attr("disabled", "disabled");
-	}
-
-	software1 = document.querySelector('.softwares1').selectedIndex;
-	software2 = document.querySelector('.softwares2').selectedIndex;
-	software3 = document.querySelector('.softwares3').selectedIndex;
-
-	software1 = document.getElementsByTagName("option")[software1].value;
-	software2 = document.getElementsByTagName("option")[software2].value;
-	software3 = document.getElementsByTagName("option")[software3].value;
-
-	$(".otherSoftware").attr("disabled", "disabled");
-
-	if(software2 === "none" || software3 === "none")
-	{
-$(".otherSoftware").attr("disabled", "");
-otherSoftware = document.getElementById('otherSoftware').value;
-	}
-	else
-	{
-$(".otherSoftware").attr("disabled", "disabled");
-	}
+	document.querySelector('.softwares1').addEventListener('change', function(){
+			software1 = document.querySelector('.softwares1').selectedIndex;
+		});
+		
+		document.querySelector('.softwares2').addEventListener('change', function(){
+			software2 = document.querySelector('.softwares2').selectedIndex;
+			checkSoftware(software2);
+		});
+		
+		document.querySelector('.softwares3').addEventListener('change', function(){
+			software3 = document.querySelector('.softwares3').selectedIndex;
+			checkSoftware(software3);
+		});
 	document.getElementById('next').textContent = 'Submit';
 };
 
@@ -164,4 +158,38 @@ var progressBarWidth = function(k)
 	width = k*25;
 	document.querySelector('.progress-bar').style.width = width + "%";
 	document.querySelector('.progress-bar').textContent = width + "%";
+};
+
+var checkGame = function(x){
+	if(x === 17)
+	{
+		document.querySelector(".otherGame").disabled = false;
+		otherGame = document.getElementById('otherGame').value;
+	}
+	if(game2 !== 17 && game3 !== 17)
+	{
+		document.getElementById('otherGame').disabled = true;
+	}
+};
+var checkSoftware = function(x){
+	if(x === 9)
+	{
+		document.getElementById('otherSoftware').disabled = false;
+		otherSoftware = document.getElementById('otherSoftware').value;
+	}
+	if(software2 !== 9 && software3 !== 9)
+	{
+		document.getElementById('otherSoftware').disabled = true;
+	}
+};
+var checkPriority = function(x){
+	if(x === 6)
+	{
+		document.getElementById('otherPriority').disabled = false;
+		otherPriority = document.getElementById('otherPriority').value;
+	}
+	if(priority2 !== 6 && priority3 !== 6)
+	{
+		document.getElementById('otherPriority').disabled = true;
+	}
 };
