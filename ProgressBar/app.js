@@ -7,9 +7,8 @@ document.querySelector('.p2').style.visibility = 'hidden';
 document.querySelector('.p3').style.visibility = 'hidden';
 document.querySelector('.p4').style.visibility = 'hidden';
 	
-document.getElementById('next').addEventListener('click', function(e)
+document.getElementById('next').addEventListener('click', function()
 {	
-	e.preventDefault();
 	if(k == 1)
 	{
 		p1();
@@ -36,9 +35,8 @@ document.getElementById('next').addEventListener('click', function(e)
 	progressBarWidth(k);
 });
 	
-document.getElementById('back').addEventListener('click', function(e)
+document.getElementById('back').addEventListener('click', function()
 {
-	e.preventDefault();
 	if(k > 1)
 	{
 		document.querySelector('.p' + k).style.visibility = 'hidden';
@@ -71,7 +69,8 @@ document.getElementById('back').addEventListener('click', function(e)
 
 var p1 = function()
 {
-
+	//document.getElementById('name').required = true;
+	//document.getElementById('email').required = true;
 	name = document.getElementById('name').value;
 	email = document.getElementById('email').value;
 	min = document.getElementById('min').value;
@@ -80,9 +79,8 @@ var p1 = function()
 
 var p2 = function()
 {	
-	//document.getElementById('otherPriority').disabled = true;
 	
-	document.querySelector('.priority1').addEventListener('change', function(){
+		document.querySelector('.priority1').addEventListener('change', function(){
 			priority1 = document.querySelector('.priority1').selectedIndex;
 		});
 		
@@ -104,7 +102,6 @@ var p3 = function()
 		document.querySelector(".games1").disabled = false;
 		document.querySelector(".games2").disabled = false;
 		document.querySelector(".games3").disabled = false;
-		//document.querySelector(".otherGame").disabled = true;
 		
 		document.querySelector('.games1').addEventListener('change', function(){
 			game1 = document.querySelector('.games1').selectedIndex;
@@ -119,17 +116,14 @@ var p3 = function()
 			game3 = document.querySelector('.games3').selectedIndex;
 			checkGame(game3);
 		});
-		
 	}
 	else
 	{
-		document.querySelector(".games1").disabled = true;
-		document.querySelector(".games2").disabled = true;
-		document.querySelector(".games3").disabled = true;
-		document.querySelector(".otherGame").disabled = true;
+		document.querySelector(".games1").style.visibility = "hidden";
+		document.querySelector(".games2").style.visibility = "hidden";
+		document.querySelector(".games3").style.visibility = "hidden";
+		document.querySelector(".otherGame").style.visibility = "hidden";
 	}
-
-	//document.getElementById('otherSoftware').disabled = true;
 	
 	document.querySelector('.softwares1').addEventListener('change', function(){
 			software1 = document.querySelector('.softwares1').selectedIndex;
@@ -163,17 +157,19 @@ var progressBarWidth = function(k)
 var checkGame = function(x){
 	if(x === 17)
 	{
+		//document.getElementById('otherGame').required = true;
 		document.querySelector(".otherGame").disabled = false;
 		otherGame = document.getElementById('otherGame').value;
 	}
 	if(game2 !== 17 && game3 !== 17)
 	{
-		document.getElementById('otherGame').disabled = true;
+		document.querySelector('.otherGame').disabled = true;
 	}
 };
 var checkSoftware = function(x){
 	if(x === 9)
 	{
+		//document.getElementById('otherSoftware').required = true;
 		document.getElementById('otherSoftware').disabled = false;
 		otherSoftware = document.getElementById('otherSoftware').value;
 	}
@@ -185,6 +181,7 @@ var checkSoftware = function(x){
 var checkPriority = function(x){
 	if(x === 6)
 	{
+		//document.getElementById('otherPriority').required = true;
 		document.getElementById('otherPriority').disabled = false;
 		otherPriority = document.getElementById('otherPriority').value;
 	}
