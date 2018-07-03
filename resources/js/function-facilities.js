@@ -97,6 +97,12 @@ $(document).ready(function(){
     },{
         offset: '50%'
     })
+    $('.js--wp-2').waypoint(function(direction){
+         $('.section-faq li').addClass('animated fadeIn');
+         $('.section-faq h2').addClass('animated fadeIn');
+    },{
+        offset: '75%'
+    })
        
     
     /*Mobile nav*/
