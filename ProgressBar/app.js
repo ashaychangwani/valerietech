@@ -3,7 +3,6 @@ var width, k, name, email, min, max, priority1, priority2, priority3, game1, gam
 width = 25;
 k = 1;
 
-
 document.querySelector('.p1').style.visibility = '';
 document.querySelector('.p2').style.visibility = 'hidden';
 document.querySelector('.p3').style.visibility = 'hidden';
@@ -11,6 +10,7 @@ document.querySelector('.p4').style.visibility = 'hidden';
 
 document.getElementById('next').addEventListener('click', function(e)
 {	
+	e.preventDefault();
 	if(k == 1)
 	{
 		p1();
@@ -36,11 +36,6 @@ document.getElementById('next').addEventListener('click', function(e)
 	}
 	progressBarWidth(k);
 });
-
-document.getElementById('next').addEventListener('click', function(e)
-{
-	
-}
 
 document.getElementById('back').addEventListener('click', function(e)
 {
@@ -85,8 +80,6 @@ var p1 = function()
 	email = document.getElementById('email').value;
 	min = document.getElementById('min').value;
 	max = document.getElementById('max').value;
-	
-	$('input').prop('required', true);
 };
 
 var p2 = function()
@@ -202,3 +195,10 @@ var checkPriority = function(x){
 		document.getElementById('otherPriority').disabled = true;
 	}
 };
+
+/* $(document).ready(function(){
+    $("form").submit(function(event){
+        event.preventDefault();
+        alert("Submit prevented");
+    });
+}); */
