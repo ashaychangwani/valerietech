@@ -19,14 +19,19 @@
   </div>
 </div>
 
-			<form id="addEvent-form" action="serverScript.php">
+			<form class="main-form">
+						<input type="text" id="name" required>	
+						<input type="email" id="email" placeholder="Your Email" required>
+						<input type="number" id="min">
+						<input type="number" id="max">
+				        <input type="submit" value="Next">
+                        <input type="submit" value="Submit">
+                
+            </form>
+    <form id="addEvent-form" action="serverScript.php">
 				<div id="panel1" class="p1">
 				  <h2>Personal Details</h2>
 					<fieldset class="ui-corner-all">
-						<label>Name:</label><input type="text" id="name">	
-						<label>Email:</label><input type="email" id="email" placeholder="Your Email">
-						<label>Min:</label><input type="Number" id="min">
-						<label>Max:</label><input type="Number" id="max">
 
 						<!-- <label>Choose password:</label><input type="password">
 						<label>Confirm password:</label><input type="password"> -->
@@ -177,7 +182,6 @@
   					<p>We shall contact you soon with our recommended build</p>
 					</fieldset>
 				</div>
-				<input type="submit" id="next" value="Next >"><input type="submit" id="back" disabled="disabled" value="< Back">
 				<!-- <button type="submit" id="next">Next &gt;</button><button id="back" disabled="disabled">&lt; Back</button> -->
 			</form>
 		<script type="text/javascript" src="app.js"></script>

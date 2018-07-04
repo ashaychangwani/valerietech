@@ -3,6 +3,25 @@ var width, k, name, email, min, max, priority1, priority2, priority3, game1, gam
 width = 25;
 k = 1;
 
+ $(document).ready(function(){
+    $(".main-form").submit(function(event){
+        event.preventDefault();
+        p1();
+    });
+     
+var p1 = function()
+{
+	//document.getElementById('name').required = true;
+	//document.getElementById('email').required = true;
+	name = document.getElementById('name').value;
+	email = document.getElementById('email').value;
+	min = document.getElementById('min').value;
+	max = document.getElementById('max').value;
+};
+     
+}); 
+
+
 document.querySelector('.p1').style.visibility = '';
 document.querySelector('.p2').style.visibility = 'hidden';
 document.querySelector('.p3').style.visibility = 'hidden';
@@ -72,15 +91,6 @@ document.getElementById('back').addEventListener('click', function(e)
 
 
 
-var p1 = function()
-{
-	//document.getElementById('name').required = true;
-	//document.getElementById('email').required = true;
-	name = document.getElementById('name').value;
-	email = document.getElementById('email').value;
-	min = document.getElementById('min').value;
-	max = document.getElementById('max').value;
-};
 
 var p2 = function()
 {	
@@ -195,10 +205,3 @@ var checkPriority = function(x){
 		document.getElementById('otherPriority').disabled = true;
 	}
 };
-
-/* $(document).ready(function(){
-    $("form").submit(function(event){
-        event.preventDefault();
-        alert("Submit prevented");
-    });
-}); */
