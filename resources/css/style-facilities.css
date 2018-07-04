@@ -374,11 +374,13 @@ input[type=submit]:active,
 }
 
 .section-facilities .col{
+    position: relative;
     width: 80%;
     display: block;
-    float: center;
+    float: left;
+    left: 1.5%;
     margin:1.6% 8%;
-    padding: 0 20px;
+    padding: 0 20px 0 20px+10%;
 }
 
 .section-facilities h3{
