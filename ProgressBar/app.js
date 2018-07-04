@@ -2,12 +2,14 @@ var width, k, name, email, min, max, priority1, priority2, priority3, game1, gam
 	
 width = 25;
 k = 1;
+
+
 document.querySelector('.p1').style.visibility = '';
 document.querySelector('.p2').style.visibility = 'hidden';
 document.querySelector('.p3').style.visibility = 'hidden';
 document.querySelector('.p4').style.visibility = 'hidden';
-	
-document.getElementById('next').addEventListener('click', function()
+
+document.getElementById('next').addEventListener('click', function(e)
 {	
 	if(k == 1)
 	{
@@ -34,9 +36,15 @@ document.getElementById('next').addEventListener('click', function()
 	}
 	progressBarWidth(k);
 });
-	
-document.getElementById('back').addEventListener('click', function()
+
+document.getElementById('next').addEventListener('click', function(e)
 {
+	
+}
+
+document.getElementById('back').addEventListener('click', function(e)
+{
+	e.preventDefault();
 	if(k > 1)
 	{
 		document.querySelector('.p' + k).style.visibility = 'hidden';
@@ -67,6 +75,8 @@ document.getElementById('back').addEventListener('click', function()
 	progressBarWidth(k);
 });
 
+
+
 var p1 = function()
 {
 	//document.getElementById('name').required = true;
@@ -75,6 +85,8 @@ var p1 = function()
 	email = document.getElementById('email').value;
 	min = document.getElementById('min').value;
 	max = document.getElementById('max').value;
+	
+	$('input').prop('required', true);
 };
 
 var p2 = function()
