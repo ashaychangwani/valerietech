@@ -229,6 +229,7 @@ input[type=submit]{
 .btn-learn:link,
 .btn-learn:visited{
     color: #1b9cfc;
+    margin: 0;
 }
 
 input[type=submit]:hover,

@@ -420,7 +420,7 @@ input[type=submit]:active,
 .section-faq{
     background-color: #fcfcfc;
     height: auto;
-    padding: 70px 15px 60px 15px;
+    padding: 60px 15px;
 }
 
 .flipdown-ani{
@@ -441,7 +441,6 @@ input[type=submit]:active,
       position: absolute;
       transform: translate( -6px , 0 );
       margin-top: 15px;
-      margin-right: -40px;
       right: 0;
       height: 20px;
         width: 20px;
@@ -449,8 +448,8 @@ input[type=submit]:active,
 .section-faq .faq-question{
     font-size: 110%;
     margin-left: 15px;
+    padding-right: 40px;
     color: #484848;
-    margin-bottom: 13px;
     user-select: none;
     cursor: pointer;
 }
@@ -462,11 +461,13 @@ input[type=submit]:active,
     opacity: 1;
     transform: translate( 0 , 0 );
     z-index: 2;
+    padding: 10px 20px 7px 20px;
 }
 
 
 .section-faq li{
-    margin-bottom: 25px;
+    margin: 10px auto 0 auto;
+    border-bottom: 1px solid #bababa;
     position: relative;
     opacity: 0;
 }
