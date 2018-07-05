@@ -1,33 +1,75 @@
-
-
  $(document).ready(function(){
-     
-    var width, k, name, email, min, max, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware;
+    
+    var width, k, name, email, min, max, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
 	
-
+/*
     document.querySelector('.p1').style.visibility = '';
     document.querySelector('.p2').style.visibility = 'hidden';
     document.querySelector('.p3').style.visibility = 'hidden';
-    document.querySelector('.p4').style.visibility = 'hidden';
+    document.querySelector('.p4').style.visibility = 'hidden';*/
     
+    var test=document.getElementsByName("back")[0].style.display="none";
     width = 25;
     k = 1;
+     
+     $('.submitButton').click(function(){
+         buttonPressed = $(this).attr('name');
+     });
+     
     $(".main-form").submit(function(event){
         event.preventDefault();
+        alert("inside");
+        if(buttonPressed === "next"){
+        if(k == 1)
+        {
+            p1();
+        }
+        document.querySelector('.p' + k).style.visibility = 'hidden';
+        k = k+1;
+        document.querySelector('.p' + k).style.visibility = '';
+            
         if(k > 1)
+        {
+                var test=document.getElementsByName("back")[0].style.display="inline-block";
+
+        }
+        
+        if(k == 2)
+        {
+            alert("calling p2");
+            p2();
+        }
+        if(k == 3)
+        {
+            p3();
+            document. getElementsByName('next').textContent = 'Submit';
+            
+        }
+        progressBarWidth(k);
+        alert("Func working end"+k);
+
+            
+        }
+        else if(buttonPressed === "back"){
+            
+            if(k > 1)
         {
             document.querySelector('.p' + k).style.visibility = 'hidden';
             k = k-1;
             document.querySelector('.p' + k).style.visibility = '';
-            document.getElementById('back').disabled = true;
         }
         if(k > 1)
-        {
-            document.getElementById('back').disabled = false;
+        {        
+            document.getElementsByName("back")[0].style.display="inline-block";
+
+        }
+        else{
+        document.getElementsByName("back")[0].style.display="none";
+            
         }
         if(k < 3)
         {
-            document.getElementById('next').textContent = 'Next';
+            document.getElementsByName('next').textContent = 'Next';
         }
         if(k == 1)
         {
@@ -44,6 +86,8 @@
         }
         progressBarWidth(k);
         alert("Func working end"+k);
+
+        }
     });
 
          var p1 = function()
