@@ -2,11 +2,11 @@
     
     var width, k, name, email, min, max, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
 	
-/*
+
     document.querySelector('.p1').style.visibility = '';
-    document.querySelector('.p2').style.visibility = 'hidden';
-    document.querySelector('.p3').style.visibility = 'hidden';
-    document.querySelector('.p4').style.visibility = 'hidden';*/
+    document.querySelector('.p2').style.display = 'none';
+    document.querySelector('.p3').style.display = 'none';
+    document.querySelector('.p4').style.display = 'none';
     
     var test=document.getElementsByName("back")[0].style.display="none";
     width = 25;
@@ -24,9 +24,9 @@
         {
             p1();
         }
-        document.querySelector('.p' + k).style.visibility = 'hidden';
+        document.querySelector('.p' + k).style.display = 'none';
         k = k+1;
-        document.querySelector('.p' + k).style.visibility = '';
+        document.querySelector('.p' + k).style.display = 'block';
             
         if(k > 1)
         {
@@ -54,9 +54,9 @@
             
             if(k > 1)
         {
-            document.querySelector('.p' + k).style.visibility = 'hidden';
+            document.querySelector('.p' + k).style.display = 'none';
             k = k-1;
-            document.querySelector('.p' + k).style.visibility = '';
+            document.querySelector('.p' + k).style.display = 'block';
         }
         if(k > 1)
         {        
@@ -143,10 +143,10 @@
         }
         else
         {
-            document.querySelector(".games1").style.visibility = "hidden";
-            document.querySelector(".games2").style.visibility = "hidden";
-            document.querySelector(".games3").style.visibility = "hidden";
-            document.querySelector(".otherGame").style.visibility = "hidden";
+            document.querySelector(".games1").style.display = "none";
+            document.querySelector(".games2").style.display = "none";
+            document.querySelector(".games3").style.display = "none";
+            document.querySelector(".otherGame").style.display = "none";
         }
 
         document.querySelector('.softwares1').addEventListener('change', function(){
@@ -167,8 +167,8 @@
 
     var p4 = function()
     {
-        document.getElementById('next').style.visibility = 'hidden';
-        document.getElementById('back').style.visibility = 'hidden';
+        document.getElementById('next').style.display = 'none';
+        document.getElementById('back').style.display = 'none';
     };
 
     var progressBarWidth = function(k)
