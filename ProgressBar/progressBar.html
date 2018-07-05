@@ -20,7 +20,7 @@
 </div> 
     <form class="main-form">
     <div id="panel1" class="p1">
-        <input type="text" id="name" placeholder="Your name">	
+        <input type="text" id="name" placeholder="Your name" required>	
         <input type="email" id="email" placeholder="Your email">
         <input type="number" id="min">
         <input type="number" id="max">
@@ -53,7 +53,7 @@
                 <option value="video">Video Editing</option>
                 <option value="other">Other</option>
             </select>
-            <label>Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" disabled></textarea>
+            <label name="priorityLabel">Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" class="otherPriority"></textarea>
     </div>
     <div id="panel3" class="p3">
         <select class="games1">
@@ -116,7 +116,7 @@
             <option value="other">Other</option>
         </select>
         <label name="gameLabel">Other Game:</label>
-        <input type="text" id="otherGame" class="otherGame" disabled>
+        <input type="text" id="otherGame" class="otherGame">
         <select class="softwares1">
             <option value="--"></option>
             <option value="wind10">Windows 10</option>
@@ -152,7 +152,8 @@
             <option value="adobePremirePro">Adobe Premire Pro</option>
             <option value="other">Other</option>
         </select>
-        <label name="softwareLabel">Other Software:</label><input type="text" id="otherSoftware" disabled>
+        <label name="softwareLabel">Other Software:</label>
+        <input type="text" id="otherSoftware" class="otherSoftware">
     </div>
     <div id="panel4" class="p4">
         <h2>Thanks for Registering!</h2>

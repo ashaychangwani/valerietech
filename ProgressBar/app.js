@@ -7,7 +7,12 @@
     document.querySelector('.p2').style.display = 'none';
     document.querySelector('.p3').style.display = 'none';
     document.querySelector('.p4').style.display = 'none';
-    
+    document.getElementsByName("gameLabel")[0].style.display = "inline-block";
+    document.querySelector('.otherGame').style.display = "none";
+    document.getElementsByName("softwareLabel")[0].style.display = "none";
+    document.querySelector('.otherSoftware').style.display = "none";
+
+     
     var test=document.getElementsByName("back")[0].style.display="none";
     width = 25;
     k = 1;
@@ -38,6 +43,10 @@
             document. getElementsByName('next').textContent = 'Submit';
             
         }
+        if(k == 4)
+        {
+            p4();        
+        }
         progressBarWidth(k);
         
 
@@ -60,9 +69,10 @@
         document.getElementsByName("back")[0].style.display="none";
             
         }
-        if(k < 3)
+        if(k <= 3)
         {
-            document.getElementsByName('next').textContent = 'Next';
+            document.getElementsByName('next')[0].value = 'Next';
+            document.getElementsByName('next')[0].style.display = "inline-block";
         }
         if(k == 1)
         {
@@ -102,17 +112,14 @@
             });
     var p3 = function()
     {
-        alert(priority3 + " " + priority2 + " " + priority1 + " p3 " + k);
+        
         if(priority1 === 2 || priority2 === 2 || priority3 === 2)
         {
-            
-            alert("tHEre");
             document.querySelector(".games1").style.display = "inline-block";
             document.querySelector(".games2").style.display = "inline-block";
             document.querySelector(".games3").style.display = "inline-block";
             
             document.querySelector('.games1').addEventListener('change', function(){
-                alert(game1 + "1");
                 game1 = document.querySelector('.games1').selectedIndex;
             });
 
@@ -128,15 +135,17 @@
         }
         else
         {
-            alert("HEre");
             document.querySelector(".games1").style.display = "none";
             document.querySelector(".games2").style.display = "none";
             document.querySelector(".games3").style.display = "none";
             document.querySelector(".otherGame").style.display = "none";
             document.getElementsByName("gameLabel")[0].style.display = "none";
         }
+        alert("t");
+        document.getElementsByName('next')[0].value = 'Submit';
 
-        document.querySelector('.softwares1').addEventListener('change', function(){
+    };
+document.querySelector('.softwares1').addEventListener('change', function(){
                 software1 = document.querySelector('.softwares1').selectedIndex;
             });
 
@@ -149,13 +158,10 @@
                 software3 = document.querySelector('.softwares3').selectedIndex;
                 checkSoftware(software3);
             });
-        document.getElementsByName('next').textContent = 'Submit';
-    };
-
     var p4 = function()
     {
-        document.getElementsByName('next').style.display = 'none';
-        document.getElementsByName('back').style.display = 'none';
+        document.getElementsByName('next')[0].style.display = 'none';
+        otherPriority = document.getElementById('otherPriority').value;
     };
 
     var progressBarWidth = function(k)
@@ -169,36 +175,28 @@
         if(x === 17)
         {
             //document.getElementById('otherGame').required = true;
-            document.querySelector(".otherGame").disabled = false;
+            document.querySelector(".otherGame").style.display = "inline-block";
+            document.getElementsByName("gameLabel")[0].style.display = "inline-block";
             otherGame = document.getElementById('otherGame').value;
         }
         if(game2 !== 17 && game3 !== 17)
         {
-            document.querySelector('.otherGame').disabled = true;
+            document.getElementsByName("gameLabel")[0].style.display = "none";
+            document.querySelector('.otherGame').style.display = "none";
         }
     };
     var checkSoftware = function(x){
         if(x === 9)
         {
             //document.getElementById('otherSoftware').required = true;
-            document.getElementById('otherSoftware').disabled = false;
+            document.getElementById('otherSoftware').style.display = "inline-block";
+            document.getElementsByName("softwareLabel")[0].style.display = "inline-block";
             otherSoftware = document.getElementById('otherSoftware').value;
         }
         if(software2 !== 9 && software3 !== 9)
         {
-            document.getElementById('otherSoftware').disabled = true;
-        }
-    };
-    var checkPriority = function(x){
-        if(x === 6)
-        {
-            //document.getElementById('otherPriority').required = true;
-            document.getElementById('otherPriority').disabled = false;
-            otherPriority = document.getElementById('otherPriority').value;
-        }
-        if(priority2 !== 6 && priority3 !== 6)
-        {
-            document.getElementById('otherPriority').disabled = true;
+            document.getElementsByName("softwareLabel")[0].style.display = "none";
+            document.querySelector('.otherSoftware').style.display = "none";
         }
     };
 
