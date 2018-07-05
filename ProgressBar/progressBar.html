@@ -20,8 +20,8 @@
 </div> 
     <form class="main-form">
     <div id="panel1" class="p1">
-        <input type="text" id="name" placeholder="Your name" required>	
-        <input type="email" id="email" placeholder="Your email" required>
+        <input type="text" id="name" placeholder="Your name">	
+        <input type="email" id="email" placeholder="Your email">
         <input type="number" id="min">
         <input type="number" id="max">
     </div>  
@@ -54,11 +54,6 @@
                 <option value="other">Other</option>
             </select>
             <label>Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" disabled></textarea>
-
-            <label>Email:</label><input type="text">
-            <label>Telephone:</label><input type="text">
-            <label>Address:</label><textarea rows="3" cols="25"></textarea> 
-            <button id="customize">Customize</button>
     </div>
     <div id="panel3" class="p3">
         <select class="games1">
@@ -120,7 +115,8 @@
             <option value="battlefield">Battlefield 2</option>
             <option value="other">Other</option>
         </select>
-        <label>Other Game:</label><input type="text" id="otherGame" class="otherGame" disabled>
+        <label name="gameLabel">Other Game:</label>
+        <input type="text" id="otherGame" class="otherGame" disabled>
         <select class="softwares1">
             <option value="--"></option>
             <option value="wind10">Windows 10</option>
@@ -156,7 +152,7 @@
             <option value="adobePremirePro">Adobe Premire Pro</option>
             <option value="other">Other</option>
         </select>
-        <label>Other Software:</label><input type="text" id="otherSoftware" disabled>
+        <label name="softwareLabel">Other Software:</label><input type="text" id="otherSoftware" disabled>
     </div>
     <div id="panel4" class="p4">
         <h2>Thanks for Registering!</h2>

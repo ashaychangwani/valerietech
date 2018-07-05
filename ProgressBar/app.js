@@ -1,6 +1,6 @@
  $(document).ready(function(){
     
-    var width, k, name, email, min, max, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
+    var width, k, name, email, min, max, priority1=1, priority2=1, priority3=1, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
 	
 
     document.querySelector('.p1').style.visibility = '';
@@ -18,7 +18,6 @@
      
     $(".main-form").submit(function(event){
         event.preventDefault();
-        alert("inside");
         if(buttonPressed === "next"){
         if(k == 1)
         {
@@ -33,12 +32,6 @@
                 var test=document.getElementsByName("back")[0].style.display="inline-block";
 
         }
-        
-        if(k == 2)
-        {
-            alert("calling p2");
-            p2();
-        }
         if(k == 3)
         {
             p3();
@@ -46,7 +39,7 @@
             
         }
         progressBarWidth(k);
-        alert("Func working end"+k);
+        
 
             
         }
@@ -75,36 +68,26 @@
         {
             p1();
         }
-        if(k == 2)
-        {
-            alert("calling p2");
-            p2();
-        }
         if(k == 3)
         {
             p3();
         }
         progressBarWidth(k);
-        alert("Func working end"+k);
+        
 
         }
     });
 
          var p1 = function()
         {
-            alert("reached p1");
+            
             name = document.getElementById('name').value;
             email = document.getElementById('email').value;
             min = document.getElementById('min').value;
             max = document.getElementById('max').value;
         };
-
-
-
-    var p2 = function()
-    {	
-
-            document.querySelector('.priority1').addEventListener('change', function(){
+     
+     document.querySelector('.priority1').addEventListener('change', function(){
                 priority1 = document.querySelector('.priority1').selectedIndex;
             });
 
@@ -117,17 +100,19 @@
                 priority3 = document.querySelector('.priority3').selectedIndex;
                 checkPriority(priority3);
             });
-    };
-
     var p3 = function()
     {
+        alert(priority3 + " " + priority2 + " " + priority1 + " p3 " + k);
         if(priority1 === 2 || priority2 === 2 || priority3 === 2)
         {
-            document.querySelector(".games1").disabled = false;
-            document.querySelector(".games2").disabled = false;
-            document.querySelector(".games3").disabled = false;
-
+            
+            alert("tHEre");
+            document.querySelector(".games1").style.display = "inline-block";
+            document.querySelector(".games2").style.display = "inline-block";
+            document.querySelector(".games3").style.display = "inline-block";
+            
             document.querySelector('.games1').addEventListener('change', function(){
+                alert(game1 + "1");
                 game1 = document.querySelector('.games1').selectedIndex;
             });
 
@@ -143,10 +128,12 @@
         }
         else
         {
+            alert("HEre");
             document.querySelector(".games1").style.display = "none";
             document.querySelector(".games2").style.display = "none";
             document.querySelector(".games3").style.display = "none";
             document.querySelector(".otherGame").style.display = "none";
+            document.getElementsByName("gameLabel")[0].style.display = "none";
         }
 
         document.querySelector('.softwares1').addEventListener('change', function(){
@@ -162,13 +149,13 @@
                 software3 = document.querySelector('.softwares3').selectedIndex;
                 checkSoftware(software3);
             });
-        document.getElementById('next').textContent = 'Submit';
+        document.getElementsByName('next').textContent = 'Submit';
     };
 
     var p4 = function()
     {
-        document.getElementById('next').style.display = 'none';
-        document.getElementById('back').style.display = 'none';
+        document.getElementsByName('next').style.display = 'none';
+        document.getElementsByName('back').style.display = 'none';
     };
 
     var progressBarWidth = function(k)
