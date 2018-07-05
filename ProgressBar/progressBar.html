@@ -17,11 +17,7 @@
 	25%
     </div>
   </div>
-</div>
-            
-    
-    
-    
+</div> 
     <form class="main-form">
     <div id="panel1" class="p1">
         <input type="text" id="name" placeholder="Your name" required>	
@@ -30,7 +26,141 @@
         <input type="number" id="max">
     </div>  
     <div id="panel2" class="p2">
-        
+        <h2>Primary Usage</h2>
+            <select class="priority1" required>
+                <option value="--" disabled>Priority 1</option>
+                <option value="corporateSoftware">Corporate Software</option>
+                <option value="gaming">Gaming</option>
+                <option value="generalSurfing">General Surfing</option>
+                <option value="photo">Photo Editing</option>
+                <option value="video">Video Editing</option>
+            </select>
+            <select class="priority2">
+                <option value="--" disabled>Priority 2</option>
+                <option value="corporateSoftware">Corporate Software</option>
+                <option value="gaming">Gaming</option>
+                <option value="generalSurfing">General Surfing</option>
+                <option value="photo">Photo Editing</option>
+                <option value="video">Video Editing</option>
+                <option value="other">Other</option>
+            </select>
+            <select class="priority3">
+                <option value="--" disabled>Priority 3</option>
+                <option value="corporateSoftware">Corporate Software</option>
+                <option value="gaming">Gaming</option>
+                <option value="generalSurfing">General Surfing</option>
+                <option value="photo">Photo Editing</option>
+                <option value="video">Video Editing</option>
+                <option value="other">Other</option>
+            </select>
+            <label>Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" disabled></textarea>
+
+            <label>Email:</label><input type="text">
+            <label>Telephone:</label><input type="text">
+            <label>Address:</label><textarea rows="3" cols="25"></textarea> 
+            <button id="customize">Customize</button>
+    </div>
+    <div id="panel3" class="p3">
+        <select class="games1">
+            <option value="singlePlayer" disabled>Single Player</option>
+            <option value="--0" disabled></option>
+            <option value="doom">Doom</option>
+            <option value="gta">GTA 5</option>
+            <option value="asassins">Assassin Creed: Origins</option>
+            <option value="dishonered">Dishonered 2</option>
+            <option value="hitman">Hitman</option>
+            <option value="witcher">Witcher 3</option>
+            <option value="--1" disabled></option>
+            <option value="multiPlayer" disabled>Multi Player</option>
+            <option value="--2" disabled></option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pubg">PUBG</option>
+            <option value="rocketLeague">Rocket League</option>
+            <option value="DOTA 2">DOTA 2</option>
+            <option value="lol">League of Legends</option>
+            <option value="battlefield">Battlefield 2</option>
+        </select>
+        <select class="games2">
+            <option value="singlePlayer" disabled>Single Player</option>
+            <option value="--0" disabled></option>
+            <option value="doom">Doom</option>
+            <option value="gta">GTA 5</option>
+            <option value="asassins">Assassin Creed: Origins</option>
+            <option value="dishonered">Dishonered 2</option>
+            <option value="hitman">Hitman</option>
+            <option value="witcher">Witcher 3</option>
+            <option value="--1" disabled></option>
+            <option value="multiPlayer" disabled>Multi Player</option>
+            <option value="--2" disabled></option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pubg">PUBG</option>
+            <option value="rocketLeague">Rocket League</option>
+            <option value="DOTA 2">DOTA 2</option>
+            <option value="lol">League of Legends</option>
+            <option value="battlefield">Battlefield 2</option>
+            <option value="other">Other</option>
+        </select>
+        <select class="games3">
+            <option value="singlePlayer" disabled>Single Player</option>
+            <option value="--0" disabled></option>
+            <option value="doom">Doom</option>
+            <option value="gta">GTA 5</option>
+            <option value="asassins">Assassin Creed: Origins</option>
+            <option value="dishonered">Dishonered 2</option>
+            <option value="hitman">Hitman</option>
+            <option value="witcher">Witcher 3</option>
+            <option value="--1" disabled></option>
+            <option value="multiPlayer" disabled>Multi Player</option>
+            <option value="--2" disabled></option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pubg">PUBG</option>
+            <option value="rocketLeague">Rocket League</option>
+            <option value="DOTA 2">DOTA 2</option>
+            <option value="lol">League of Legends</option>
+            <option value="battlefield">Battlefield 2</option>
+            <option value="other">Other</option>
+        </select>
+        <label>Other Game:</label><input type="text" id="otherGame" class="otherGame" disabled>
+        <select class="softwares1">
+            <option value="--"></option>
+            <option value="wind10">Windows 10</option>
+            <option value="wind7">Windoes 7: Ultimate</option>
+            <option value="mac">Mac OS</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="micro">Microsoft Office</option>
+            <option value="photoshop">Adobe Photoshop</option>
+            <option value="illustrator">Adobe Illustrator</option>
+            <option value="adobePremirePro">Adobe Premire Pro</option>
+        </select>
+        <select class="softwares2">
+            <option value="--"></option>
+            <option value="wind10">Windows 10</option>
+            <option value="wind7">Windoes 7: Ultimate</option>
+            <option value="mac">Mac OS</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="micro">Microsoft Office</option>
+            <option value="photoshop">Adobe Photoshop</option>
+            <option value="illustrator">Adobe Illustrator</option>
+            <option value="adobePremirePro">Adobe Premire Pro</option>
+            <option value="other">Other</option>
+        </select>
+        <select class="softwares3">
+            <option value="--"></option>
+            <option value="wind10">Windows 10</option>
+            <option value="wind7">Windoes 7: Ultimate</option>	
+            <option value="mac">Mac OS</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="micro">Microsoft Office</option>
+            <option value="photoshop">Adobe Photoshop</option>
+            <option value="illustrator">Adobe Illustrator</option>
+            <option value="adobePremirePro">Adobe Premire Pro</option>
+            <option value="other">Other</option>
+        </select>
+        <label>Other Software:</label><input type="text" id="otherSoftware" disabled>
+    </div>
+    <div id="panel4" class="p4">
+        <h2>Thanks for Registering!</h2>
+        <p>We shall contact you soon with our recommended build</p>
     </div>
     
         
@@ -38,125 +168,6 @@
         <input type="submit" value="Back" name="back" class="submitButton">  
     </form>
     
-           <!-- <form id="addEvent-form">
-				  <h2>Personal Details</h2>
-					<fieldset class="ui-corner-all">
-
-
-					</fieldset>
-				
-				<div id="panel2" class="p2">
-				  
-				</div>
-				<div id="panel3" class="p3">
-				  <h2>Software Requirements</h2>
-					<fieldset class="ui-corner-all">
-						<select class="games1">
-							<option value="singlePlayer" disabled>Single Player</option>
-							<option value="--0" disabled></option>
-							<option value="doom">Doom</option>
-							<option value="gta">GTA 5</option>
-							<option value="asassins">Assassin Creed: Origins</option>
-							<option value="dishonered">Dishonered 2</option>
-							<option value="hitman">Hitman</option>
-							<option value="witcher">Witcher 3</option>
-							<option value="--1" disabled></option>
-							<option value="multiPlayer" disabled>Multi Player</option>
-							<option value="--2" disabled></option>
-							<option value="fortnite">Fortnite</option>
-							<option value="pubg">PUBG</option>
-							<option value="rocketLeague">Rocket League</option>
-							<option value="DOTA 2">DOTA 2</option>
-							<option value="lol">League of Legends</option>
-							<option value="battlefield">Battlefield 2</option>
-						</select>
-						<select class="games2">
-							<option value="singlePlayer" disabled>Single Player</option>
-							<option value="--0" disabled></option>
-							<option value="doom">Doom</option>
-							<option value="gta">GTA 5</option>
-							<option value="asassins">Assassin Creed: Origins</option>
-							<option value="dishonered">Dishonered 2</option>
-							<option value="hitman">Hitman</option>
-							<option value="witcher">Witcher 3</option>
-							<option value="--1" disabled></option>
-							<option value="multiPlayer" disabled>Multi Player</option>
-							<option value="--2" disabled></option>
-							<option value="fortnite">Fortnite</option>
-							<option value="pubg">PUBG</option>
-							<option value="rocketLeague">Rocket League</option>
-							<option value="DOTA 2">DOTA 2</option>
-							<option value="lol">League of Legends</option>
-							<option value="battlefield">Battlefield 2</option>
-							<option value="other">Other</option>
-						</select>
-						<select class="games3">
-							<option value="singlePlayer" disabled>Single Player</option>
-							<option value="--0" disabled></option>
-							<option value="doom">Doom</option>
-							<option value="gta">GTA 5</option>
-							<option value="asassins">Assassin Creed: Origins</option>
-							<option value="dishonered">Dishonered 2</option>
-							<option value="hitman">Hitman</option>
-							<option value="witcher">Witcher 3</option>
-							<option value="--1" disabled></option>
-							<option value="multiPlayer" disabled>Multi Player</option>
-							<option value="--2" disabled></option>
-							<option value="fortnite">Fortnite</option>
-							<option value="pubg">PUBG</option>
-							<option value="rocketLeague">Rocket League</option>
-							<option value="DOTA 2">DOTA 2</option>
-							<option value="lol">League of Legends</option>
-							<option value="battlefield">Battlefield 2</option>
-							<option value="other">Other</option>
-						</select>
-						<label>Other Game:</label><input type="text" id="otherGame" class="otherGame" disabled>
-						<select class="softwares1">
-							<option value="--"></option>
-							<option value="wind10">Windows 10</option>
-							<option value="wind7">Windoes 7: Ultimate</option>
-							<option value="mac">Mac OS</option>
-							<option value="ubuntu">Ubuntu</option>
-							<option value="micro">Microsoft Office</option>
-							<option value="photoshop">Adobe Photoshop</option>
-							<option value="illustrator">Adobe Illustrator</option>
-							<option value="adobePremirePro">Adobe Premire Pro</option>
-						</select>
-						<select class="softwares2">
-							<option value="--"></option>
-							<option value="wind10">Windows 10</option>
-							<option value="wind7">Windoes 7: Ultimate</option>
-							<option value="mac">Mac OS</option>
-							<option value="ubuntu">Ubuntu</option>
-							<option value="micro">Microsoft Office</option>
-							<option value="photoshop">Adobe Photoshop</option>
-							<option value="illustrator">Adobe Illustrator</option>
-							<option value="adobePremirePro">Adobe Premire Pro</option>
-							<option value="other">Other</option>
-						</select>
-						<select class="softwares3">
-							<option value="--"></option>
-							<option value="wind10">Windows 10</option>
-							<option value="wind7">Windoes 7: Ultimate</option>	
-							<option value="mac">Mac OS</option>
-							<option value="ubuntu">Ubuntu</option>
-							<option value="micro">Microsoft Office</option>
-							<option value="photoshop">Adobe Photoshop</option>
-							<option value="illustrator">Adobe Illustrator</option>
-							<option value="adobePremirePro">Adobe Premire Pro</option>
-							<option value="other">Other</option>
-						</select>
-						<label>Other Software:</label><input type="text" id="otherSoftware" disabled>
-					</fieldset>
-				</div>
-				<div id="thanks" class="p4">
-				  <h2>Thanks for Registering!</h2>
-					<fieldset class="ui-corner-all">
-  					<p>We shall contact you soon with our recommended build</p>
-					</fieldset>
-				</div>
-				<!-- <button type="submit" id="next">Next &gt;</button><button id="back" disabled="disabled">&lt; Back</button> --
-			</form>-->
-		<script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
