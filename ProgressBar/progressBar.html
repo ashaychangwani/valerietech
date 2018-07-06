@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Progress Bar With Label</h2>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+	25%
+    </div>
+  </div>
+</div> 
+    <form class="main-form">
+    <div id="panel1" class="p1">
+        <input type="text" id="name" placeholder="Your name" required>	
+        <input type="email" id="email" placeholder="Your email">
+        <input type="number" id="min">
+        <input type="number" id="max">
+    </div>  
+    <div id="panel2" class="p2">
+        <h2>Primary Usage</h2>
+            <select class="priority1">
+                <option value="corporateSoftware">Corporate Software</option>
+                <option value="gaming">Gaming</option>
+                <option value="generalSurfing">General Surfing</option>
+                <option value="photo">Photo Editing</option>
+                <option value="video">Video Editing</option>
+            </select>
+            <select class="priority2">
+                <option value="corporateSoftware">Corporate Software</option>
+                <option value="gaming">Gaming</option>
+                <option value="generalSurfing">General Surfing</option>
+                <option value="photo">Photo Editing</option>
+                <option value="video">Video Editing</option>
+                <option value="other">Other</option>
+            </select>
+            <select class="priority3">
+                <option value="corporateSoftware">Corporate Software</option>
+                <option value="gaming">Gaming</option>
+                <option value="generalSurfing">General Surfing</option>
+                <option value="photo">Photo Editing</option>
+                <option value="video">Video Editing</option>
+                <option value="other">Other</option>
+            </select>
+            <label name="priorityLabel">Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" class="otherPriority"></textarea>
+    </div>
+    <div id="panel3" class="p3">
+        <select class="games1">
+            <option value="singlePlayer" disabled>Single Player</option>
+            <option value="--0" disabled></option>
+            <option value="doom">Doom</option>
+            <option value="gta">GTA 5</option>
+            <option value="asassins">Assassin Creed: Origins</option>
+            <option value="dishonered">Dishonered 2</option>
+            <option value="hitman">Hitman</option>
+            <option value="witcher">Witcher 3</option>
+            <option value="--1" disabled></option>
+            <option value="multiPlayer" disabled>Multi Player</option>
+            <option value="--2" disabled></option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pubg">PUBG</option>
+            <option value="rocketLeague">Rocket League</option>
+            <option value="DOTA 2">DOTA 2</option>
+            <option value="lol">League of Legends</option>
+            <option value="battlefield">Battlefield 2</option>
+        </select>
+        <select class="games2">
+            <option value="singlePlayer" disabled>Single Player</option>
+            <option value="--0" disabled></option>
+            <option value="doom">Doom</option>
+            <option value="gta">GTA 5</option>
+            <option value="asassins">Assassin Creed: Origins</option>
+            <option value="dishonered">Dishonered 2</option>
+            <option value="hitman">Hitman</option>
+            <option value="witcher">Witcher 3</option>
+            <option value="--1" disabled></option>
+            <option value="multiPlayer" disabled>Multi Player</option>
+            <option value="--2" disabled></option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pubg">PUBG</option>
+            <option value="rocketLeague">Rocket League</option>
+            <option value="DOTA 2">DOTA 2</option>
+            <option value="lol">League of Legends</option>
+            <option value="battlefield">Battlefield 2</option>
+            <option value="other">Other</option>
+        </select>
+        <select class="games3">
+            <option value="singlePlayer" disabled>Single Player</option>
+            <option value="--0" disabled></option>
+            <option value="doom">Doom</option>
+            <option value="gta">GTA 5</option>
+            <option value="asassins">Assassin Creed: Origins</option>
+            <option value="dishonered">Dishonered 2</option>
+            <option value="hitman">Hitman</option>
+            <option value="witcher">Witcher 3</option>
+            <option value="--1" disabled></option>
+            <option value="multiPlayer" disabled>Multi Player</option>
+            <option value="--2" disabled></option>
+            <option value="fortnite">Fortnite</option>
+            <option value="pubg">PUBG</option>
+            <option value="rocketLeague">Rocket League</option>
+            <option value="DOTA 2">DOTA 2</option>
+            <option value="lol">League of Legends</option>
+            <option value="battlefield">Battlefield 2</option>
+            <option value="other">Other</option>
+        </select>
+        <label name="gameLabel">Other Game:</label>
+        <input type="text" id="otherGame" class="otherGame">
+        <select class="softwares1">
+            <option value="mac">Mac OS</option>
+			<option value="wind10" id="win10-1">Windows 10</option>
+            <option value="wind7" id="win7-1">Windoes 7: Ultimate</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="micro">Microsoft Office</option>
+            <option value="photoshop">Adobe Photoshop</option>
+            <option value="illustrator">Adobe Illustrator</option>
+            <option value="adobePremirePro">Adobe Premire Pro</option>
+        </select>
+        <select class="softwares2">
+            <option value="mac">Mac OS</option>
+			<option value="wind10" id="win10-2">Windows 10</option>
+            <option value="wind7" id="win7-2">Windoes 7: Ultimate</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="micro">Microsoft Office</option>
+            <option value="photoshop">Adobe Photoshop</option>
+            <option value="illustrator">Adobe Illustrator</option>
+            <option value="adobePremirePro">Adobe Premire Pro</option>
+            <option value="other">Other</option>
+        </select>
+        <select class="softwares3">
+            <option value="mac">Mac OS</option>
+			<option value="wind10" id="win10-3">Windows 10</option>
+            <option value="wind7" id="win7-3">Windoes 7: Ultimate</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="micro">Microsoft Office</option>
+            <option value="photoshop">Adobe Photoshop</option>
+            <option value="illustrator">Adobe Illustrator</option>
+            <option value="adobePremirePro">Adobe Premire Pro</option>
+            <option value="other">Other</option>
+        </select>
+        <label name="softwareLabel">Other Software:</label>
+        <input type="text" id="otherSoftware" class="otherSoftware">
+    </div>
+    <div id="panel4" class="p4">
+        <h2>Thanks for Registering!</h2>
+        <p>We shall contact you soon with our recommended build</p>
+    </div>
+    
+        
+        <input type="submit" value="Next" name="next" class="submitButton">              
+        <input type="submit" value="Back" name="back" class="submitButton">  
+    </form>
+    
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
