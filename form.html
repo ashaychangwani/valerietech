@@ -116,7 +116,7 @@
                                 <label for="name">Name</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" id="name" placeholder="Your name" required>
+                                <input type="text" id="name" placeholder="Your name">
                             </div>  
                         </div>
                         <div class="row">
@@ -124,7 +124,7 @@
                                 <label for="email">Email</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="email" id="email" placeholder="Your email" required><br>
+                                <input type="email" id="email" placeholder="Your email">
                             </div>  
                         </div>
                         <div class="row">
@@ -137,29 +137,30 @@
                             </div>  
                         </div>
                     </div>
-                    
-                    
-
-                    
-                    
                     <div id="panel2" class="p2">
-                        <h2>Primary Usage</h2>
+                        <div class="row">
+                            <h3>
+                                What do you intend to use the computer for?
+                            </h3>
                             <select class="priority1">
+                                <option disabled selected value="" hidden>Priority 1</option>
                                 <option value="corporateSoftware">Corporate Software</option>
                                 <option value="gaming">Gaming</option>
                                 <option value="generalSurfing">General Surfing</option>
                                 <option value="photo">Photo Editing</option>
                                 <option value="video">Video Editing</option>
-                            </select>
+                            </select><br>
                             <select class="priority2">
+                                <option disabled selected value="" hidden>Priority 2</option>
                                 <option value="corporateSoftware">Corporate Software</option>
                                 <option value="gaming">Gaming</option>
                                 <option value="generalSurfing">General Surfing</option>
                                 <option value="photo">Photo Editing</option>
                                 <option value="video">Video Editing</option>
                                 <option value="other">Other</option>
-                            </select>
+                            </select><br>
                             <select class="priority3">
+                                <option disabled selected value="" hidden>Priority 3</option>
                                 <option value="corporateSoftware">Corporate Software</option>
                                 <option value="gaming">Gaming</option>
                                 <option value="generalSurfing">General Surfing</option>
@@ -167,6 +168,13 @@
                                 <option value="video">Video Editing</option>
                                 <option value="other">Other</option>
                             </select>
+                        </div>
+                        
+                        
+                        
+                            
+                            
+                            
                             <label name="priorityLabel">Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" class="otherPriority"></textarea>
                     </div>
                     <div id="panel3" class="p3">
@@ -270,8 +278,6 @@
                         <h2>Thanks for Registering!</h2>
                         <p>We shall contact you soon with our recommended build</p>
                     </div>
-
-
                     <input type="submit" value="Next" name="next" class="submitButton">              
                     <input type="submit" value="Back" name="back" class="submitButton">  
                 </form>

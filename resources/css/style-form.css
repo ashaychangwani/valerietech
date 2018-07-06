@@ -382,6 +382,15 @@ input[type=submit]:active,
 }
 
 
+/*          P2          */
+
+.p2 select{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+}
+
 
 
 /*----------------------------------*/

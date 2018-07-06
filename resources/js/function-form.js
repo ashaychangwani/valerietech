@@ -40,7 +40,7 @@ $(document).ready(function(){
    
     
     /*Start of app.js*/
-    var width, k, name, email, min, max, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
+    var width, k, name, email, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
 	
 
     document.querySelector('.p1').style.visibility = '';
@@ -62,7 +62,7 @@ $(document).ready(function(){
     $(".main-form").submit(function(event){
         event.preventDefault();
         if(buttonPressed === "next"){
-			
+        
         if(k == 1){p1();}
 		
         document.querySelector('.p' + k).style.display = 'none';
@@ -102,8 +102,6 @@ $(document).ready(function(){
 	var p1 = function(){
 		name = document.getElementById('name').value;
 		email = document.getElementById('email').value;
-		min = document.getElementById('min').value;
-		max = document.getElementById('max').value;
 	};
      
 	document.querySelector('.priority1').addEventListener('change', function(){priority1 = document.querySelector('.priority1').selectedIndex;});
