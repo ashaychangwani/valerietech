@@ -46,8 +46,8 @@ $(document).ready(function(){
     document.querySelector('.p1').style.visibility = '';
     document.querySelector('.p2').style.display = 'none';
     document.querySelector('.p3').style.display = 'none';
-    document.querySelector('.p4').style.display = 'none';
-    document.getElementsByName("gameLabel")[0].style.display = "none";
+    document.querySelector('.p4').style.display = 'none';            
+    document.getElementById("game-label").style.display="none"; 
     document.querySelector('.otherGame').style.display = "none";
     document.getElementsByName("softwareLabel")[0].style.display = "none";
     document.querySelector('.otherSoftware').style.display = "none";
@@ -60,7 +60,14 @@ $(document).ready(function(){
 	$('.submitButton').click(function(){buttonPressed = $(this).attr('name');});
      
     $(".main-form").submit(function(event){
+        if(k!=4){
         event.preventDefault();
+        }
+        /*if( k==2 && (priority1 == null || priority2 == null || priority3 == null))
+        {
+            alert("Please enter your priorities");
+            return;
+        }*/
         if(buttonPressed === "next"){
         
         if(k == 1){p1();}
@@ -69,7 +76,7 @@ $(document).ready(function(){
         k = k+1;
         document.querySelector('.p' + k).style.display = 'block';
             
-        if(k > 1){var test=document.getElementsByName("back")[0].style.display="inline-block";}
+        if(k > 1){var test=document.getElementsByName("back")[0].style.display="block";}
         if(k == 3){
             p3();
             document. getElementsByName('next').textContent = 'Submit';
@@ -84,13 +91,13 @@ $(document).ready(function(){
             k = k-1;
             document.querySelector('.p' + k).style.display = 'block';
         }
-        if(k > 1){document.getElementsByName("back")[0].style.display="inline-block";}
+        if(k > 1){document.getElementsByName("back")[0].style.display="block";}
 		
         else{document.getElementsByName("back")[0].style.display="none";}
 		
         if(k <= 3){
             document.getElementsByName('next')[0].value = 'Next';
-            document.getElementsByName('next')[0].style.display = "inline-block";
+            document.getElementsByName('next')[0].style.display = "block";
         }
         if(k == 1){p1();}
 		
@@ -108,12 +115,14 @@ $(document).ready(function(){
 		
 	document.querySelector('.priority2').addEventListener('change', function(){priority2 = document.querySelector('.priority2').selectedIndex;});
 		
-	document.querySelector('.priority3').addEventListener('change', function(){priority3 = document.querySelector('.priority3').selectedIndex;});
+	document.querySelector('.priority3').addEventListener('change', function(){
+        priority3 = document.querySelector('.priority3').selectedIndex;});
     var p3 = function(){
-        if(priority1 === 1 || priority2 === 1 || priority3 === 1){
-            document.querySelector(".games1").style.display = "inline-block";
-            document.querySelector(".games2").style.display = "inline-block";
-            document.querySelector(".games3").style.display = "inline-block";
+        if(priority1 === 2 || priority2 === 2 || priority3 === 2){
+            document.getElementById("game-label").style.display="block";
+            document.querySelector(".games1").style.display = "block";
+            document.querySelector(".games2").style.display = "block";
+            document.querySelector(".games3").style.display = "block";
             
             document.querySelector('.games1').addEventListener('change', function(){
                 game1 = document.querySelector('.games1').selectedIndex;

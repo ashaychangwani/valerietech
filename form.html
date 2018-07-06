@@ -109,7 +109,7 @@
             </div>
             <hr>
             <div class="row">
-                <form class="main-form">
+                <form class="main-form" action="/index.html">
                     <div id="panel1" class="p1">
                         <div class="row">
                             <div class="col span-1-of-3">
@@ -149,7 +149,7 @@
                                 <option value="generalSurfing">General Surfing</option>
                                 <option value="photo">Photo Editing</option>
                                 <option value="video">Video Editing</option>
-                            </select><br>
+                            </select>
                             <select class="priority2">
                                 <option disabled selected value="" hidden>Priority 2</option>
                                 <option value="corporateSoftware">Corporate Software</option>
@@ -158,7 +158,7 @@
                                 <option value="photo">Photo Editing</option>
                                 <option value="video">Video Editing</option>
                                 <option value="other">Other</option>
-                            </select><br>
+                            </select>
                             <select class="priority3">
                                 <option disabled selected value="" hidden>Priority 3</option>
                                 <option value="corporateSoftware">Corporate Software</option>
@@ -169,114 +169,140 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
-                        
-                        
-                        
-                            
-                            
-                            
-                            <label name="priorityLabel">Anything Specific?</label><textarea rows="3" cols="25" id="otherPriority" class="otherPriority"></textarea>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label name="priorityLabel">Anything Specific?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea rows="2" cols="30" id="otherPriority" class="otherPriority"></textarea>
+                            </div>
+                        </div>
                     </div>
                     <div id="panel3" class="p3">
-                        <select class="games1">
-                            <option value="singlePlayer" disabled>Single Player</option>
-                            <option value="--0" disabled></option>
-                            <option value="doom">Doom</option>
-                            <option value="gta">GTA 5</option>
-                            <option value="asassins">Assassin Creed: Origins</option>
-                            <option value="dishonered">Dishonered 2</option>
-                            <option value="hitman">Hitman</option>
-                            <option value="witcher">Witcher 3</option>
-                            <option value="--1" disabled></option>
-                            <option value="multiPlayer" disabled>Multi Player</option>
-                            <option value="--2" disabled></option>
-                            <option value="fortnite">Fortnite</option>
-                            <option value="pubg">PUBG</option>
-                            <option value="rocketLeague">Rocket League</option>
-                            <option value="DOTA 2">DOTA 2</option>
-                            <option value="lol">League of Legends</option>
-                            <option value="battlefield">Battlefield 2</option>
-                        </select>
-                        <select class="games2">
-                            <option value="singlePlayer" disabled>Single Player</option>
-                            <option value="--0" disabled></option>
-                            <option value="doom">Doom</option>
-                            <option value="gta">GTA 5</option>
-                            <option value="asassins">Assassin Creed: Origins</option>
-                            <option value="dishonered">Dishonered 2</option>
-                            <option value="hitman">Hitman</option>
-                            <option value="witcher">Witcher 3</option>
-                            <option value="--1" disabled></option>
-                            <option value="multiPlayer" disabled>Multi Player</option>
-                            <option value="--2" disabled></option>
-                            <option value="fortnite">Fortnite</option>
-                            <option value="pubg">PUBG</option>
-                            <option value="rocketLeague">Rocket League</option>
-                            <option value="DOTA 2">DOTA 2</option>
-                            <option value="lol">League of Legends</option>
-                            <option value="battlefield">Battlefield 2</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <select class="games3">
-                            <option value="singlePlayer" disabled>Single Player</option>
-                            <option value="--0" disabled></option>
-                            <option value="doom">Doom</option>
-                            <option value="gta">GTA 5</option>
-                            <option value="asassins">Assassin Creed: Origins</option>
-                            <option value="dishonered">Dishonered 2</option>
-                            <option value="hitman">Hitman</option>
-                            <option value="witcher">Witcher 3</option>
-                            <option value="--1" disabled></option>
-                            <option value="multiPlayer" disabled>Multi Player</option>
-                            <option value="--2" disabled></option>
-                            <option value="fortnite">Fortnite</option>
-                            <option value="pubg">PUBG</option>
-                            <option value="rocketLeague">Rocket League</option>
-                            <option value="DOTA 2">DOTA 2</option>
-                            <option value="lol">League of Legends</option>
-                            <option value="battlefield">Battlefield 2</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <label name="gameLabel">Other Game:</label>
-                        <input type="text" id="otherGame" class="otherGame">
-                        <select class="softwares1">
-                            <option value="mac">Mac OS</option>
-                            <option value="wind10" id="win10-1">Windows 10</option>
-                            <option value="wind7" id="win7-1">Windoes 7: Ultimate</option>
-                            <option value="ubuntu">Ubuntu</option>
-                            <option value="micro">Microsoft Office</option>
-                            <option value="photoshop">Adobe Photoshop</option>
-                            <option value="illustrator">Adobe Illustrator</option>
-                            <option value="adobePremirePro">Adobe Premire Pro</option>
-                        </select>
-                        <select class="softwares2">
-                            <option value="mac">Mac OS</option>
-                            <option value="wind10" id="win10-2">Windows 10</option>
-                            <option value="wind7" id="win7-2">Windoes 7: Ultimate</option>
-                            <option value="ubuntu">Ubuntu</option>
-                            <option value="micro">Microsoft Office</option>
-                            <option value="photoshop">Adobe Photoshop</option>
-                            <option value="illustrator">Adobe Illustrator</option>
-                            <option value="adobePremirePro">Adobe Premire Pro</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <select class="softwares3">
-                            <option value="mac">Mac OS</option>
-                            <option value="wind10" id="win10-3">Windows 10</option>
-                            <option value="wind7" id="win7-3">Windoes 7: Ultimate</option>
-                            <option value="ubuntu">Ubuntu</option>
-                            <option value="micro">Microsoft Office</option>
-                            <option value="photoshop">Adobe Photoshop</option>
-                            <option value="illustrator">Adobe Illustrator</option>
-                            <option value="adobePremirePro">Adobe Premire Pro</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <label name="softwareLabel">Other Software:</label>
-                        <input type="text" id="otherSoftware" class="otherSoftware">
+                        <div class="row">
+                            <h3>
+                                What software do you need?
+                            </h3>
+                            <select class="softwares1">
+                                <option value="mac">Mac OS</option>
+                                <option value="wind10" id="win10-1">Windows 10</option>
+                                <option value="wind7" id="win7-1">Windoes 7: Ultimate</option>
+                                <option value="ubuntu">Ubuntu</option>
+                                <option value="micro">Microsoft Office</option>
+                                <option value="photoshop">Adobe Photoshop</option>
+                                <option value="illustrator">Adobe Illustrator</option>
+                                <option value="adobePremirePro">Adobe Premire Pro</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <select class="softwares2">
+                                <option value="mac">Mac OS</option>
+                                <option value="wind10" id="win10-2">Windows 10</option>
+                                <option value="wind7" id="win7-2">Windoes 7: Ultimate</option>
+                                <option value="ubuntu">Ubuntu</option>
+                                <option value="micro">Microsoft Office</option>
+                                <option value="photoshop">Adobe Photoshop</option>
+                                <option value="illustrator">Adobe Illustrator</option>
+                                <option value="adobePremirePro">Adobe Premire Pro</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <select class="softwares3">
+                                <option value="mac">Mac OS</option>
+                                <option value="wind10" id="win10-3">Windows 10</option>
+                                <option value="wind7" id="win7-3">Windoes 7: Ultimate</option>
+                                <option value="ubuntu">Ubuntu</option>
+                                <option value="micro">Microsoft Office</option>
+                                <option value="photoshop">Adobe Photoshop</option>
+                                <option value="illustrator">Adobe Illustrator</option>
+                                <option value="adobePremirePro">Adobe Premire Pro</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label name="softwareLabel">Other Software</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" id="otherSoftware" class="otherSoftware">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3 id="game-label">
+                                Choose the games you will be playing
+                            </h3>
+                            <select class="games1">
+                                <option value="singlePlayer" disabled>Single Player</option>
+                                <option value="--0" disabled></option>
+                                <option value="doom">Doom</option>
+                                <option value="gta">GTA 5</option>
+                                <option value="asassins">Assassin Creed: Origins</option>
+                                <option value="dishonered">Dishonered 2</option>
+                                <option value="hitman">Hitman</option>
+                                <option value="witcher">Witcher 3</option>
+                                <option value="--1" disabled></option>
+                                <option value="multiPlayer" disabled>Multi Player</option>
+                                <option value="--2" disabled></option>
+                                <option value="fortnite">Fortnite</option>
+                                <option value="pubg">PUBG</option>
+                                <option value="rocketLeague">Rocket League</option>
+                                <option value="DOTA 2">DOTA 2</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="battlefield">Battlefield 2</option>
+                            </select>
+                            <select class="games2">
+                                <option value="singlePlayer" disabled>Single Player</option>
+                                <option value="--0" disabled></option>
+                                <option value="doom">Doom</option>
+                                <option value="gta">GTA 5</option>
+                                <option value="asassins">Assassin Creed: Origins</option>
+                                <option value="dishonered">Dishonered 2</option>
+                                <option value="hitman">Hitman</option>
+                                <option value="witcher">Witcher 3</option>
+                                <option value="--1" disabled></option>
+                                <option value="multiPlayer" disabled>Multi Player</option>
+                                <option value="--2" disabled></option>
+                                <option value="fortnite">Fortnite</option>
+                                <option value="pubg">PUBG</option>
+                                <option value="rocketLeague">Rocket League</option>
+                                <option value="DOTA 2">DOTA 2</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="battlefield">Battlefield 2</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <select class="games3">
+                                <option value="singlePlayer" disabled>Single Player</option>
+                                <option value="--0" disabled></option>
+                                <option value="doom">Doom</option>
+                                <option value="gta">GTA 5</option>
+                                <option value="asassins">Assassin Creed: Origins</option>
+                                <option value="dishonered">Dishonered 2</option>
+                                <option value="hitman">Hitman</option>
+                                <option value="witcher">Witcher 3</option>
+                                <option value="--1" disabled></option>
+                                <option value="multiPlayer" disabled>Multi Player</option>
+                                <option value="--2" disabled></option>
+                                <option value="fortnite">Fortnite</option>
+                                <option value="pubg">PUBG</option>
+                                <option value="rocketLeague">Rocket League</option>
+                                <option value="DOTA 2">DOTA 2</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="battlefield">Battlefield 2</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label name="gameLabel">Other Game</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="text" id="otherGame" class="otherGame">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="panel4" class="p4">
-                        <h2>Thanks for Registering!</h2>
-                        <p>We shall contact you soon with our recommended build</p>
+                        <div class="row">
+                            <h3>Thanks for registering!</h3>
+                            <p>We'll contact you soon with our recommended build</p>
+                        </div>
                     </div>
                     <input type="submit" value="Next" name="next" class="submitButton">              
                     <input type="submit" value="Back" name="back" class="submitButton">  
@@ -326,61 +352,6 @@
           
           
           
-          
-          
-        <section class="section section-contact js--section-contact" id="contact">
-            <div class="row">
-                <h2>
-                    We're happy to hear from you
-                </h2>
-                <h3>
-                    Just shoot us a message &mdash; You won't be disappointed. We promise!
-                </h3>
-                <hr>
-            </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="find-us">How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends">Friends and Family</option>
-                                <option value="recommendation" selected>Recommendation</option>
-                                <option value="search-engine">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3 blank">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
