@@ -368,7 +368,18 @@ input[type=submit]:active,
 /*----------------------------------*/
 /*  FORM */
 /*----------------------------------*/
+.main-form{
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
 
+.main-form input[type=submit]{
+    position: relative;
+    width: 20%;
+    left: 40%;
+    margin-right: 0;
+}
 
 
 
