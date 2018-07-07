@@ -34,10 +34,9 @@ function showSlides(n) {
       slides[slideIndex-1].style.display = "block";
       htext[slideIndex-1].style.display = "block"; 
       dots[slideIndex-1].className += " active";
-       timeOut=setTimeout(plusSlides,5000,1);   
+      timeOut=setTimeout(plusSlides,5000,1);   
 }
 $(document).ready(function(){
-   
     
     /*Start of app.js*/
     var width, k, name, email, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed;
@@ -79,9 +78,12 @@ $(document).ready(function(){
         if(k > 1){var test=document.getElementsByName("back")[0].style.display="block";}
         if(k == 3){
             p3();
-            document. getElementsByName('next').textContent = 'Submit';
+            document.getElementsByName('next')[0].value = 'Submit';
         }
-        if(k == 4){p4();}
+        if(k == 4){
+			p4();
+			document.getElementsByName('back')[0].value = 'Home';
+		}
         progressBarWidth(k);            
         }
         else if(buttonPressed === "back"){
@@ -126,16 +128,17 @@ $(document).ready(function(){
             
             document.querySelector('.games1').addEventListener('change', function(){
                 game1 = document.querySelector('.games1').selectedIndex;
+				check(game1, 'otherGame', 'gameLabel', 17, game1, game2, game3);
             });
 
             document.querySelector('.games2').addEventListener('change', function(){
                 game2 = document.querySelector('.games2').selectedIndex;
-                check(game2, 'otherGame', 'gameLabel', 17, game2, game3);
+                check(game2, 'otherGame', 'gameLabel', 17, game1, game2, game3);
             });
 
             document.querySelector('.games3').addEventListener('change', function(){
                 game3 = document.querySelector('.games3').selectedIndex;
-                check(game3, 'otherGame', 'gameLabel', 17, game2, game3);
+                check(game3, 'otherGame', 'gameLabel', 17, game1, game2, game3);
             });
         }else{
             document.querySelector(".games1").style.display = "none";
@@ -148,18 +151,19 @@ $(document).ready(function(){
     };
 	document.querySelector('.softwares1').addEventListener('change', function(){
 		software1 = document.querySelector('.softwares1').selectedIndex;
+		check(software1, 'otherSoftware', 'softwareLabel', 8, software1, software2, software3);
 		exclusive(2, 3);
 	});
 
 	document.querySelector('.softwares2').addEventListener('change', function(){
 		software2 = document.querySelector('.softwares2').selectedIndex;
-		check(software2, 'otherSoftware', 'softwareLabel', 8, software2, software3);
+		check(software2, 'otherSoftware', 'softwareLabel', 8, software1, software2, software3);
 		exclusive(1, 3);
 	});
 
 	document.querySelector('.softwares3').addEventListener('change', function(){
 		software3 = document.querySelector('.softwares3').selectedIndex;
-		check(software3, 'otherSoftware', 'softwareLabel', 8, software2, software3);
+		check(software3, 'otherSoftware', 'softwareLabel', 8, software1, software2, software3);
 		exclusive(1, 2);
 	});
 			
@@ -170,17 +174,17 @@ $(document).ready(function(){
 
     var progressBarWidth = function(k){
         width = k*25;
-        document.querySelector('.progress-bar').style.width = width + "%";
-        document.querySelector('.progress-bar').textContent = width + "%";
+        document.querySelector('#myBar').style.width = width + "%";
+        document.querySelector('#myBar').textContent = width + "%";
     };
 	
-	var check = function(x, id, name, val, v2, v3){
+	var check = function(x, id, name, val, v1, v2, v3){
 		if(x === val){
             document.getElementById(id).style.display = "inline-block";
             document.getElementsByName(name)[0].style.display = "inline-block";
             otherSoftware = document.getElementById(id).value;
         }
-        if(v2 !== val && v3 !== val){
+        if(v1 !== val && v2 !== val && v3 !== val){
             document.getElementsByName(name)[0].style.display = "none";
             document.getElementById(id).style.display = "none";
         }
