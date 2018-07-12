@@ -69,22 +69,29 @@ $(document).ready(function(){
         }*/
         if(buttonPressed === "next"){
         
-        if(k == 1){p1();}
+        if(k == 1){
+			p1();
+		}
 		
         document.querySelector('.p' + k).style.display = 'none';
         k = k+1;
         document.querySelector('.p' + k).style.display = 'block';
             
         if(k > 1){var test=document.getElementsByName("back")[0].style.display="block";}
+		if(k == 2){
+			document.getElementById("fifty").checked = true;
+		}
         if(k == 3){
             p3();
             document.getElementsByName('next')[0].value = 'Submit';
+			document.getElementById("seventyfive").checked = true;
         }
         if(k == 4){
 			p4();
 			document.getElementsByName('back')[0].value = 'Home';
+			document.getElementById("onehundred").checked = true;
 		}
-        progressBarWidth(k);            
+        //progressBarWidth(k);            
         }
         else if(buttonPressed === "back"){
             
@@ -101,10 +108,18 @@ $(document).ready(function(){
             document.getElementsByName('next')[0].value = 'Next';
             document.getElementsByName('next')[0].style.display = "block";
         }
-        if(k == 1){p1();}
-		
-        if(k == 3){p3();}
-        progressBarWidth(k);
+        if(k == 1){
+			p1();
+			document.getElementById("twentyfive").checked = true;
+		}
+		if(k == 2){
+			document.getElementById("fifty").checked = true;
+		}
+        if(k == 3){
+			p3();
+			document.getElementById("seventyfive").checked = true;
+		}
+        //progressBarWidth(k);
         }
     });
 
@@ -172,11 +187,11 @@ $(document).ready(function(){
         otherPriority = document.getElementById('otherPriority').value;
     };
 
-    var progressBarWidth = function(k){
+    /* var progressBarWidth = function(k){
         width = k*25;
         document.querySelector('#myBar').style.width = width + "%";
         document.querySelector('#myBar').textContent = width + "%";
-    };
+    }; */
 	
 	var check = function(x, id, name, val, v1, v2, v3){
 		if(x === val){
