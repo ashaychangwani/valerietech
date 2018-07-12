@@ -47,7 +47,7 @@ $(document).ready(function(){
     document.querySelector('.p2').style.display = 'none';
     document.querySelector('.p3').style.display = 'none';
     document.querySelector('.p4').style.display = 'none';            
-    document.getElementById("game-label").style.display="none"; 
+    document.getElementsByName("gameLabel")[0].style.display="none"; 
     document.querySelector('.otherGame').style.display = "none";
     document.getElementsByName("softwareLabel")[0].style.display = "none";
     document.querySelector('.otherSoftware').style.display = "none";
@@ -83,11 +83,12 @@ $(document).ready(function(){
 		}
         if(k == 3){
             p3();
-            document. getElementsByName('next').textContent = 'Submit';
+            document. getElementsByName('next')[0].value = 'Submit';
 			document.getElementById("seventyfive").checked = true;
         }
         if(k == 4){
 			p4();
+			document. getElementsByName('back')[0].value = 'Home';
 			document.getElementById("onehundred").checked = true;
 		}          
         }
@@ -141,16 +142,17 @@ $(document).ready(function(){
             
             document.querySelector('.games1').addEventListener('change', function(){
                 game1 = document.querySelector('.games1').selectedIndex;
+				check(game1, 'otherGame', 'gameLabel', 17, game1, game2, game3);
             });
 
             document.querySelector('.games2').addEventListener('change', function(){
                 game2 = document.querySelector('.games2').selectedIndex;
-                check(game2, 'otherGame', 'gameLabel', 17, game2, game3);
+                check(game2, 'otherGame', 'gameLabel', 17, game1, game2, game3);
             });
 
             document.querySelector('.games3').addEventListener('change', function(){
                 game3 = document.querySelector('.games3').selectedIndex;
-                check(game3, 'otherGame', 'gameLabel', 17, game2, game3);
+                check(game3, 'otherGame', 'gameLabel', 17, game1, game2, game3);
             });
         }else{
             document.querySelector(".games1").style.display = "none";
@@ -163,18 +165,19 @@ $(document).ready(function(){
     };
 	document.querySelector('.softwares1').addEventListener('change', function(){
 		software1 = document.querySelector('.softwares1').selectedIndex;
+		check(software1, 'otherSoftware', 'softwareLabel', 8, software1, software2, software3);
 		exclusive(2, 3);
 	});
 
 	document.querySelector('.softwares2').addEventListener('change', function(){
 		software2 = document.querySelector('.softwares2').selectedIndex;
-		check(software2, 'otherSoftware', 'softwareLabel', 8, software2, software3);
+		check(software2, 'otherSoftware', 'softwareLabel', 8, software1, software2, software3);
 		exclusive(1, 3);
 	});
 
 	document.querySelector('.softwares3').addEventListener('change', function(){
 		software3 = document.querySelector('.softwares3').selectedIndex;
-		check(software3, 'otherSoftware', 'softwareLabel', 8, software2, software3);
+		check(software3, 'otherSoftware', 'softwareLabel', 8, software1, software2, software3);
 		exclusive(1, 2);
 	});
 			
@@ -189,20 +192,20 @@ $(document).ready(function(){
         document.querySelector('.progress-bar').textContent = width + "%";
     }; */
 	
-	var check = function(x, id, name, val, v2, v3){
+	var check = function(x, id, name, val, v1, v2, v3){
 		if(x === val){
             document.getElementById(id).style.display = "inline-block";
             document.getElementsByName(name)[0].style.display = "inline-block";
             otherSoftware = document.getElementById(id).value;
         }
-        if(v2 !== val && v3 !== val){
+        if(v1 !== val &&v2 !== val && v3 !== val){
             document.getElementsByName(name)[0].style.display = "none";
             document.getElementById(id).style.display = "none";
         }
 	};
 	
 	var exclusive = function(y, z){
-		if(software1 === 1 || software1 === 2 || software2 === 1 || software2 === 2 || software3 === 1 || software3 === 2){
+		if(software1 === 0 || software1 === 1 || software2 === 0 || software2 === 1 || software3 === 0 || software3 === 1){
 			document.getElementById('win7-' + y).disabled = true;
 			document.getElementById('win10-' + y).disabled = true;
 			document.getElementById('win7-' + z).disabled = true;
