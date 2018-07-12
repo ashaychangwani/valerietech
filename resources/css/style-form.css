@@ -364,6 +364,53 @@ header  .fade {
 
 
 /*----------------------------------*/
+/*  PROGRESS BAR  */
+/*----------------------------------*/
+
+
+.section-progress-bar .container .progress {
+  margin: 0 auto;
+  width: 50%;
+  padding: 3px;
+  border: 1px solid #c4c4c4;
+    border-radius: 400px;
+}
+
+.progress-bar {
+  height: 15px;
+  border-radius: 400px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+#twentyfive:checked ~ .progress > .progress-bar {
+  width: 25%;
+  background-color: #90CFFE;
+}
+
+#fifty:checked ~ .progress > .progress-bar {
+  width: 50%;
+  background-color: #61B2EF;
+}
+
+#seventyfive:checked ~ .progress > .progress-bar {
+  width: 75%;
+  background-color: #3296DF;
+}
+
+#onehundred:checked ~ .progress > .progress-bar {
+  width: 100%;
+  background-color: #0379D0;
+}
+
+.section-progress-bar .radio {
+  display: none;
+}
+
+
+
+/*----------------------------------*/
 /*  FORM */
 /*----------------------------------*/
 .main-form{
@@ -384,7 +431,7 @@ header  .fade {
     transition: border 0.3s, background-color 0.3s, color 0.3s;
     display: block;
     width: 20%;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 .submitButton:nth-of-type(2){
@@ -400,7 +447,7 @@ header  .fade {
 /*          P1          */
 
 .p1 input{
-    width: 70%;
+    width: 85%;
     padding-left: 5px;
 }
 
