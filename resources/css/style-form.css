@@ -133,6 +133,7 @@ header nav{
 
 .banners{
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     background-position: center -350px;
     width: 100%;
@@ -463,14 +464,21 @@ header  .fade {
 }
 
 .p2 select{
-    width: 35%;
+    width: 40%;
     display: block;
     margin: 10px auto;
 }
 .p2 .priority3{
     margin-bottom: 20px;
 }
+.p2 .row:nth-of-type(2){
+    width: 80%;
+    margin: 0 auto;
+}
 
+.p2 .row:nth-of-type(2) textarea{
+    width: 100%;
+}
 
 /*          P3          */
 

@@ -129,6 +129,7 @@ header nav{
 
 .banners{
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     background-position: center -350px;
     width: 100%;
@@ -455,19 +456,20 @@ input[type=submit]:active,
 }
 .section-faq .faq-answer{
     position: relative;
+    color: #5c5c5c;
     overflow: hidden;
     max-height: 800px;
-    transition: all 0.25s ease-in-out;    
+    transition: all 0.4s ease-in-out;    
     opacity: 1;
     transform: translate( 0 , 0 );
-    z-index: 2;
-    padding: 10px 20px 7px 20px;
+    z-index: -1;
+    padding: 10px 40px 7px 40px;
 }
 
 
 .section-faq li{
     margin: 10px auto 0 auto;
-    border-bottom: 1px solid #bababa;
+    border-bottom: 0.5px solid #ddd;
     position: relative;
     opacity: 0;
 }
@@ -572,6 +574,7 @@ input[type=submit]:active,
 
 .section-faq .faq-question:before {
     content: "• ";
+    margin-right: 1.5px;
 }
 @keyframes flipdown
 {
