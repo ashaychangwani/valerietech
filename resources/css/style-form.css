@@ -133,8 +133,6 @@ header nav{
 
 .banners{
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     background-position: center -350px;
     width: 100%;
     height: 100%;
@@ -447,8 +445,13 @@ header  .fade {
 }
 /*          P1          */
 
+.p1{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
 .p1 input{
-    width: 85%;
+    width: 100%;
     padding-left: 5px;
 }
 

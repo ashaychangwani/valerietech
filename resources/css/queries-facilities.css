@@ -19,23 +19,14 @@
     h1{
         font-size: 190%;
     }
-    /*      WHY US      */
-    
-    .section-why-us p{
-        width: 70%;
-        margin-left: 15%;
-    }
     
 }
 /* Big tablet to 1200: 1023px to 1200px*/
 @media only screen and (max-width: 1200px)
 {
-    /*      WHY US      */
-    
-    .section-why-us p{
-        width: 70%;
-        margin-left: 15%;
-    }
+    .section-faq .row{
+        width: 80%;
+    } 
 }
 
 
@@ -44,7 +35,7 @@
 {
     
     html{
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .section{
@@ -56,46 +47,25 @@
     
     
     h1{
-        font-size: 200%;
+        font-size: 180%;
     }
     .hero-text-box{
         padding: 0 10%;
     }
     
-    /*      MISSION      */
     
-    .section-mission{
-        padding: 0 50px;
+    /*      FAQ      */
+    
+    .section-faq{
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    .section-faq .faq-answer{
+        padding-left: 25px;
+        padding-right: 25px;
     }
     
     
-    /*      WHY-US      */
-    
-    
-    .section-why-us p{
-        width: 80%;
-        margin-left: 10%;
-    }
-    
-    
-    /*      FACILITIES      */
-    
-    
-    .section-facilities .col:first-child p:before,
-    .section-facilities .col:nth-child(3) p:before{
-        content: "&#10";
-        display: block;
-        color: white;    
-    }
-    .section-facilities .col:first-child{
-    padding-left: 10px
-    }
-    .section-facilities .col:last-child{
-        padding-right: 10px;
-    }
-    .section-facilities h3{
-        font-size: 135%;
-    }
     
     /*      CONTACT      */
     
@@ -115,7 +85,7 @@
         font-size: 14px;
     }
     h1{
-        font-size: 130%;
+        font-size: 185%;
     }
     .section{
         margin-top: 40px;
@@ -178,78 +148,37 @@
         top:60%;
         padding: 0 3%;
     }
-    .section-why-us p{
-        width: 90%;
-        margin: auto auto;
-    }
     
     
     
     /*      FACILITIES      */
-    
-    
-    .section-facilities .col:first-child p:before,
-    .section-facilities .col:nth-child(3) p:before{
-        display: none;
+    .section-facilities h3{
+        font-size: 135%;
+    }
+    .section-facilities p{
+        font-size: 115%;
     }
     
-    .section-facilities .col{
-        width: 80%;
-        margin-left: 10%;
-        text-align: center;
+    /*      FAQ      */
+    
+    .section-faq{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .section-faq .faq-question{
+        font-size: 120%;
+    }
+    .section-faq .faq-answer{
+        font-size: 108%;
     }
     
-    .section-facilities h3,
-    .section-facilities i{
-        text-align: center;
+    .section-faq .row{
+        width: 90%;
     }
-    
-    
-    
-    /*      TESTIMONIALS      */
-    
-    
-    
-    .section-testimonials{
-        min-height: 860px;
-        margin: auto 0;
-        height: auto;
-    }
-    .section-testimonials .col{
-	   width: 100%;
-       display: block;
-    }
-    .section-testimonials .col:first-child{
-	   margin-left: 1.6%;
-    }
-    
-    blockquote:before{
-        content: "\201C";
-        position: absolute;
-        display: block;
-        top: -40%;
-        left: 3px;
-        font-size: 500%;
-        line-height: 145%;
-    }
-    
-    blockquote{
-        display: block;
-        width: 100%;
-    }
-    
-    
-    /*      PHOTO-GRID      */
-    
-    
-    
-    .showcase li{
-        width: 50%;
-    }
-    
     
     
     /*      CONTACT      */
+    
     
     
     .section-contact .row{
@@ -265,9 +194,9 @@
     
     .section-contact .contact-form{
         margin-top: 0;
-        width: 90%;
-        padding-right: 20px;
         padding-left: 20px;
+        padding-right: 20px;
+        width: 90%;
     }
     .section-contact{
         padding: 0 10px;
@@ -373,22 +302,37 @@
         padding: 10px 10px;
     }
     
+    /*      FACILITIES      */
     
-    /*      WHY US      */
-    
-    
-    .section-why-us{
-        padding-top: 40px;
-        padding-bottom: 30px;
+    .section-facilities h3{
+        font-size: 150%;
+    }
+    .section-facilities p{
+        font-size: 120%;
     }
     
-    /*      PHOTO GRID      */
-    
-    
-    .showcase li{
-        width: 50%;
+    .section-facilities .col{
+        width: 90%;
+        left: 5%;
     }
     
+    /*      FAQ      */
+    
+    .section-faq .row{
+        width: 90%;
+    }
+    .section-faq{
+        padding: 40px 0 30px 0;
+    }
+    
+    .section-faq .faq-question{
+        font-size: 125%;
+    }
+    .section-faq .faq-answer{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 112%;
+    }
     
     /*      CONTACT      */
     
@@ -402,6 +346,8 @@
     .contact-form label{
         font-size: 110%;
     }
+    
+    
     
     /*      FOOTER      */   
     
@@ -423,6 +369,4 @@
         text-align: center;
         float: none;
     }
-    
-    
 }

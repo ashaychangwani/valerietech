@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style-form.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries-form.css">
         <link href="https://unpkg.com/ionicons@4.2.1/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -133,7 +133,7 @@
                                 <label for="name">Name</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" id="name" placeholder="Your name" required>
+                                <input type="text" id="name" placeholder="Your name" >
                             </div>  
                         </div>
                         <div class="row">
@@ -141,7 +141,7 @@
                                 <label for="email">Email</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="email" id="email" placeholder="Your email" required>
+                                <input type="email" id="email" placeholder="Your email" >
                             </div>  
                         </div>
                         <div class="row">
@@ -150,7 +150,7 @@
                             </div>
                             <div class="col span-2-of-3">
                                 <input type="text" id="amount" readonly style="border:0; font-weight:300;margin-bottom: 15px;">
-                                <div id="slider-range" style="width: 85%;"></div>
+                                <div id="slider-range" style="width: 100%;"></div>
                             </div>  
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                         </div>
                         <div class="row">
                             <div class="col span-1-of-3">
-                                <label name="priorityLabel">Anything Specific?</label>
+                                <label name="priorityLabel" class="priorityLabel">Anything Specific?</label>
                             </div>
                             <div class="col span-2-of-3">
                                 <textarea rows="2" id="otherPriority" class="otherPriority"></textarea>
@@ -236,7 +236,7 @@
                         </div>
                         <div class="row">
                             <div class="col span-1-of-3">
-                                <label name="softwareLabel">Other Software</label>
+                                <label name="softwareLabel" class="softwareLabel">Other Software</label>
                             </div>
                             <div class="col span-2-of-3">
                                 <input type="text" id="otherSoftware" class="otherSoftware">
@@ -309,13 +309,13 @@
                                 <option value="battlefield">Battlefield 2</option>
                                 <option value="other">Other</option>
                             </select>
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label name="gameLabel">Other Game</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="text" id="otherGame" class="otherGame">
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label name="gameLabel">Other Game</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" id="otherGame" class="otherGame">
                             </div>
                         </div>
                     </div>

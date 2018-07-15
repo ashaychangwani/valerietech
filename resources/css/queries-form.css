@@ -19,23 +19,12 @@
     h1{
         font-size: 190%;
     }
-    /*      WHY US      */
-    
-    .section-why-us p{
-        width: 70%;
-        margin-left: 15%;
-    }
     
 }
 /* Big tablet to 1200: 1023px to 1200px*/
 @media only screen and (max-width: 1200px)
 {
-    /*      WHY US      */
-    
-    .section-why-us p{
-        width: 70%;
-        margin-left: 15%;
-    }
+     
 }
 
 
@@ -44,7 +33,7 @@
 {
     
     html{
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .section{
@@ -52,58 +41,25 @@
         margin-bottom: 40px;
     }
     
+    
     /*      HEADER      */
     
     
     h1{
-        font-size: 200%;
+        font-size: 180%;
     }
     .hero-text-box{
         padding: 0 10%;
     }
     
-    /*      MISSION      */
-    
-    .section-mission{
-        padding: 0 50px;
-    }
+    /*      P2      */
     
     
-    /*      WHY-US      */
-    
-    
-    .section-why-us p{
+    .main-form{
         width: 80%;
-        margin-left: 10%;
+        left: 10%;
     }
     
-    
-    /*      FACILITIES      */
-    
-    
-    .section-facilities .col:first-child p:before,
-    .section-facilities .col:nth-child(3) p:before{
-        content: "&#10";
-        display: block;
-        color: white;    
-    }
-    .section-facilities .col:first-child{
-    padding-left: 10px
-    }
-    .section-facilities .col:last-child{
-        padding-right: 10px;
-    }
-    .section-facilities h3{
-        font-size: 135%;
-    }
-    
-    /*      CONTACT      */
-    
-    
-    .contact-form{
-        width: 80%;
-        margin: 25px auto 0 auto;
-    }
 }
 
 
@@ -112,10 +68,14 @@
 {
 
     html{
-        font-size: 14px;
+        font-size: 16px;
     }
     h1{
-        font-size: 130%;
+        font-size: 165%;
+    }
+    h2{
+        font-size: 140%;
+        margin-bottom: 0px;
     }
     .section{
         margin-top: 40px;
@@ -123,6 +83,7 @@
     }
     .col{
         width: 99%;
+        margin-bottom: 7.5px;
     }
     .logo{
         margin-top: 20px;
@@ -137,6 +98,9 @@
     
     .main-nav{
         margin-top: 25px;
+    }
+    .submitButton{
+        width: 30%;
     }
     
     /*      HEADER      */
@@ -178,112 +142,61 @@
         top:60%;
         padding: 0 3%;
     }
-    .section-why-us p{
-        width: 90%;
-        margin: auto auto;
+    
+    
+    /*      P1      */
+    
+    .span-2-of-3{
+        margin-left: 0;
+    }
+    .span-2-of-3 input{
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
+    /*      P2      */
     
-    
-    /*      FACILITIES      */
-    
-    
-    .section-facilities .col:first-child p:before,
-    .section-facilities .col:nth-child(3) p:before{
-        display: none;
+    .p2 h3{
+        font-size: 120%;
     }
-    
-    .section-facilities .col{
-        width: 80%;
-        margin-left: 10%;
-        text-align: center;
+    .p2 .row:nth-of-type(2) .col:nth-of-type(1){
+        margin-top: 0;
+        font-size: 105%;
     }
-    
-    .section-facilities h3,
-    .section-facilities i{
-        text-align: center;
-    }
-    
-    
-    
-    /*      TESTIMONIALS      */
-    
-    
-    
-    .section-testimonials{
-        min-height: 860px;
-        margin: auto 0;
-        height: auto;
-    }
-    .section-testimonials .col{
-	   width: 100%;
-       display: block;
-    }
-    .section-testimonials .col:first-child{
-	   margin-left: 1.6%;
-    }
-    
-    blockquote:before{
-        content: "\201C";
-        position: absolute;
-        display: block;
-        top: -40%;
-        left: 3px;
-        font-size: 500%;
-        line-height: 145%;
-    }
-    
-    blockquote{
-        display: block;
-        width: 100%;
-    }
-    
-    
-    /*      PHOTO-GRID      */
-    
-    
-    
-    .showcase li{
+    .p2 select{
         width: 50%;
     }
     
     
-    
-    /*      CONTACT      */
-    
-    
-    .section-contact .row{
-        margin: 10px auto;
-    }
-    
-    .section-contact hr{
-        margin-bottom: 10px
-    }
-    .section-contact .row:nth-of-type(2) .row{
-        margin-top: 0;
-    }
-    
-    .section-contact .contact-form{
-        margin-top: 0;
-        width: 90%;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    .section-contact{
-        padding: 0 10px;
-    }
-    .blank{
-        display: none;
-    }
-    
-    input[type=submit]{
-        margin: 10px auto;
-    }
-    
-    .section-contact .span-2-of-3{
+    .p2 .row .span-1-of-3{
         text-align: center;
     }
     
+    /*      P3      */
+    
+    .p3 select{
+        width: 50%;
+    }
+    .p3 h3{
+        margin-bottom: 15px;
+    }
+    
+    .p3 label{
+        margin-top: 10px;
+        font-size: 105%;
+    }
+    
+    .p3 .row:nth-of-type(2),
+    .p3 .row:nth-of-type(4){
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    
+    .p3 input[type=text]{
+        margin-bottom: 10px;
+    }
     /*      FOOTER      */
     
     
@@ -310,11 +223,15 @@
 @media only screen and (max-width: 480px)
 {
     html{
-        font-size: 14px;
+        font-size: 16px;
     }
     .section{
         margin-top: 40px;
         margin-bottom: 30px;
+    }
+    .submitButton{
+        margin-top: 10px;
+        width: 40%;
     }
     .main-nav{
         display: none;
@@ -373,35 +290,31 @@
         padding: 10px 10px;
     }
     
-    
-    /*      WHY US      */
-    
-    
-    .section-why-us{
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
-    
-    /*      PHOTO GRID      */
-    
-    
-    .showcase li{
-        width: 50%;
-    }
-    
-    
-    /*      CONTACT      */
-    
-    .section-contact .span-2-of-3{
-        margin-top: 15px;
-        margin-bottom: 5px;
-    }
-    .section-contact .span-1-of-3{
+    /*      P1      */   
+    .p1 .span-1-of-3{
         text-align: center;
     }
-    .contact-form label{
-        font-size: 110%;
+    .p1 .span-2-of-3 input{
+        text-align: center;
     }
+    
+    
+    
+    /*      P2      */   
+    
+    .p2 select{
+        width: 60%;
+    }
+    
+    /*      P3      */ 
+    
+    .p3 select{
+        width: 60%;
+    }
+    .p3 .softwares3{
+        margin-bottom: 10px;
+    }
+    
     
     /*      FOOTER      */   
     
@@ -423,6 +336,4 @@
         text-align: center;
         float: none;
     }
-    
-    
 }
