@@ -126,14 +126,14 @@
             </div>
             <hr>
             <div class="row">
-                <form class="main-form" action="/index.html">
+                <form class="main-form" method="post" action="resources/php/form.php">
                     <div id="panel1" class="p1">
                         <div class="row">
                             <div class="col span-1-of-3">
                                 <label for="name">Name</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" id="name" placeholder="Your name" >
+                                <input type="text" name="name" id="name" placeholder="Your name" >
                             </div>  
                         </div>
                         <div class="row">
@@ -141,7 +141,7 @@
                                 <label for="email">Email</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="email" id="email" placeholder="Your email" >
+                                <input type="email" name="email" id="email" placeholder="Your email">
                             </div>  
                         </div>
                         <div class="row">
