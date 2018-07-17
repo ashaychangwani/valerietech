@@ -37,6 +37,9 @@ function showSlides(n) {
        timeOut=setTimeout(plusSlides,5000,1);   
 }
 $(document).ready(function(){
+	
+	var find;
+	document.querySelector('.otherFind').style.display = "none";
     
     /* STICKY NAVIGATION */
     $('.js--section-facilities').waypoint(function(direction){
@@ -114,4 +117,15 @@ $(document).ready(function(){
         }
         
     })
+	document.getElementById('find-us').addEventListener('change', function(){
+		find = document.getElementById('find-us').selectedIndex;
+		console.log(find);
+		if(find === 4){
+			document.getElementsByName('otherFind')[0].style.display = "block";
+            document.getElementsByName('otherFind')[0].required = true;
+		}
+		else{
+			document.getElementsByName('otherFind')[0].style.display = "none";
+		}
+	});
 });
