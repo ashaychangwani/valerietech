@@ -46,7 +46,8 @@ $(document).ready(function(){
     document.querySelector('.p1').style.visibility = '';
     document.querySelector('.p2').style.display = 'none';
     document.querySelector('.p3').style.display = 'none';
-    document.querySelector('.p4').style.display = 'none';            
+    document.querySelector('.p4').style.display = 'none';
+	document.getElementById('game-label').style.display = 'none';
     document.getElementsByName("gameLabel")[0].style.display="none"; 
     document.querySelector('.otherGame').style.display = "none";
     document.getElementsByName("softwareLabel")[0].style.display = "none";
@@ -139,20 +140,21 @@ $(document).ready(function(){
             document.querySelector(".games1").style.display = "block";
             document.querySelector(".games2").style.display = "block";
             document.querySelector(".games3").style.display = "block";
+			document.getElementById('game-label').style.display = 'block';
             
             document.querySelector('.games1').addEventListener('change', function(){
                 game1 = document.querySelector('.games1').selectedIndex;
-				check(game1, 'otherGame', 'gameLabel', 17, game1, game2, game3);
+				check(game1, 'otherGame', 'gameLabel', 18, game1, game2, game3);
             });
 
             document.querySelector('.games2').addEventListener('change', function(){
                 game2 = document.querySelector('.games2').selectedIndex;
-                check(game2, 'otherGame', 'gameLabel', 17, game1, game2, game3);
+                check(game2, 'otherGame', 'gameLabel', 18, game1, game2, game3);
             });
 
             document.querySelector('.games3').addEventListener('change', function(){
                 game3 = document.querySelector('.games3').selectedIndex;
-                check(game3, 'otherGame', 'gameLabel', 17, game1, game2, game3);
+                check(game3, 'otherGame', 'gameLabel', 18, game1, game2, game3);
             });
         }else{
             document.querySelector(".games1").style.display = "none";
@@ -160,6 +162,7 @@ $(document).ready(function(){
             document.querySelector(".games3").style.display = "none";
             document.querySelector(".otherGame").style.display = "none";
             document.getElementsByName("gameLabel")[0].style.display = "none";
+			document.getElementById('game-label').style.display = 'none';
         }
         document.getElementsByName('next')[0].value = 'Submit';
     };
@@ -196,7 +199,7 @@ $(document).ready(function(){
 		if(x === val){
             document.getElementById(id).style.display = "inline-block";
             document.getElementsByName(name)[0].style.display = "inline-block";
-            otherSoftware = document.getElementById(id).value;
+            //otherSoftware = document.getElementById(id).value;
         }
         if(v1 !== val &&v2 !== val && v3 !== val){
             document.getElementsByName(name)[0].style.display = "none";
