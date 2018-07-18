@@ -126,14 +126,14 @@
             </div>
             <hr>
             <div class="row">
-                <form class="main-form" method="post" action="resources/php/form.php">
+                <form class="main-form" action="/resources/php/form.php">
                     <div id="panel1" class="p1">
                         <div class="row">
                             <div class="col span-1-of-3">
                                 <label for="name">Name</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" name="name" id="name" placeholder="Your name" >
+                                <input type="text" name="name" id="name" placeholder="Your name">
                             </div>  
                         </div>
                         <div class="row">
@@ -149,7 +149,7 @@
                                 <label>Budget range</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" id="amount" readonly style="border:0; font-weight:300;margin-bottom: 15px;">
+                                <input type="text" id="amount" name="amount" readonly style="border:0; font-weight:300;margin-bottom: 15px;">
                                 <div id="slider-range" style="width: 100%;"></div>
                             </div>  
                         </div>
