@@ -40,9 +40,8 @@ $(document).ready(function(){
    
     
     /*Start of app.js*/
-    var width, k, name, email, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed,values;
+    var width, k, name, email, priority1, priority2, priority3, game1, game2, game3, software1, software2, software3, otherPriority, otherGame, otherSoftware, buttonPressed,priceRange;
     
-    var values: [ 40, 50 ];
 	
 
     document.querySelector('.p1').style.visibility = '';
@@ -137,7 +136,8 @@ $(document).ready(function(){
 	document.querySelector('.priority3').addEventListener('change', function(){
         priority3 = document.querySelector('.priority3').selectedIndex;});
     var p3 = function(){
-//        alert(values[ 0 ]);
+        
+        priceRange=$("#amount").val();
         if(priority1 === 2 || priority2 === 2 || priority3 === 2){
             document.getElementById("game-label").style.display="block";
             document.querySelector(".games1").style.display = "block";
@@ -323,6 +323,7 @@ $(document).ready(function(){
     });
     $( "#amount" ).val( "\u20B9" + $( "#slider-range" ).slider( "values", 0 ) +
       ",000 - \u20B9" + $( "#slider-range" ).slider( "values", 1 ) + ",000" );
+    
     
 });
 
