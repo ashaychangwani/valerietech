@@ -1,9 +1,14 @@
 <?php
-    $name=$_GET["name"];
-    $name=str_replace(array("\r","\n"),array(" "," "),$name);
-    $email=filter_var(trim($_GET["email"]), FILTER_SANITIZE_EMAIL);
+    $name=$_POST["name"];
+    //$name=str_replace(array("\r","\n"),array(" "," "),$name);
+    //$email=filter_var(trim($_GET["email"]), //FILTER_SANITIZE_EMAIL);
     $message="Test";
-    $price=$_GET["amount"];
+    //$price=$_GET["amount"];
+    
+    echo "<pre> Name:$name";
+    print_r($_POST);
+    echo "</pre>";
+
     $recipient="ashaychangwani@gmail.com";
     
     $subject="New contact from $name";
