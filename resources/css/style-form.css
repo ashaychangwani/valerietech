@@ -474,6 +474,10 @@ header  .fade {
 .p2 .priority3{
     margin-bottom: 20px;
 }
+
+.p2 .otherPriority{
+    padding: 5px;
+}
 .p2 .row:nth-of-type(2){
     width: 80%;
     margin: 0 auto;

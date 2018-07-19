@@ -159,7 +159,7 @@
                             <h3>
                                 What do you intend to use the computer for?
                             </h3>
-                            <select class="priority1">
+                            <select class="priority1" name="priority1">
                                 <option disabled selected value="" hidden>Priority 1</option>
                                 <option value="corporateSoftware">Corporate Software</option>
                                 <option value="gaming">Gaming</option>
@@ -167,7 +167,7 @@
                                 <option value="photo">Photo Editing</option>
                                 <option value="video">Video Editing</option>
                             </select>
-                            <select class="priority2">
+                            <select class="priority2" name="priority2">
                                 <option disabled selected value="" hidden>Priority 2</option>
                                 <option value="corporateSoftware">Corporate Software</option>
                                 <option value="gaming">Gaming</option>
@@ -176,7 +176,7 @@
                                 <option value="video">Video Editing</option>
                                 <option value="other">Other</option>
                             </select>
-                            <select class="priority3">
+                            <select class="priority3" name="priority3">
                                 <option disabled selected value="" hidden>Priority 3</option>
                                 <option value="corporateSoftware">Corporate Software</option>
                                 <option value="gaming">Gaming</option>
@@ -191,7 +191,7 @@
                                 <label name="priorityLabel" class="priorityLabel">Anything Specific?</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <textarea rows="2" id="otherPriority" class="otherPriority"></textarea>
+                                <textarea rows="2" id="otherPriority" class="otherPriority" name="specificReq"></textarea>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                             <h3>
                                 What software do you need?
                             </h3>
-                            <select class="softwares1">
+                            <select class="softwares1" name="softwares1">
                                 <option value="wind10" id="win10-1">Windows 10: Pro</option>
                                 <option value="wind7" id="win7-1">Windoes 7: Ultimate</option>
                                 <option value="ubuntu">Ubuntu</option>
@@ -211,7 +211,7 @@
 								<option value="mac">Mac OS</option>
                                 <option value="other">Other</option>
                             </select>
-                            <select class="softwares2">
+                            <select class="softwares2" name="softwares2">
                                 <option value="wind10" id="win10-2">Windows 10: Pro</option>
                                 <option value="wind7" id="win7-2">Windoes 7: Ultimate</option>
                                 <option value="ubuntu">Ubuntu</option>
@@ -222,7 +222,7 @@
 								<option value="mac">Mac OS</option>
                                 <option value="other">Other</option>
                             </select>
-                            <select class="softwares3">
+                            <select class="softwares3" name="softwares3">
                                 <option value="wind10" id="win10-3">Windows 10: Pro</option>
                                 <option value="wind7" id="win7-3">Windoes 7: Ultimate</option>
                                 <option value="ubuntu">Ubuntu</option>
@@ -239,14 +239,14 @@
                                 <label name="softwareLabel" class="softwareLabel">Other Software</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" id="otherSoftware" class="otherSoftware">
+                                <input type="text" id="otherSoftware" class="otherSoftware" name="otherSoftware">
                             </div>
                         </div>
                         <div class="row">
                             <h3 id="game-label">
                                 Choose the games you will be playing
                             </h3>
-                            <select class="games1">
+                            <select class="games1" name="games1">
                                 <option value="singlePlayer" disabled>Single Player</option>
                                 <option value="--0" disabled></option>
                                 <option value="doom">Doom</option>
@@ -267,7 +267,7 @@
                                 <option value="battlefield">Battlefield 2</option>
 								<option value="other">Other</option>
                             </select>
-                            <select class="games2">
+                            <select class="games2" name="games2">
                                 <option value="singlePlayer" disabled>Single Player</option>
                                 <option value="--0" disabled></option>
                                 <option value="doom">Doom</option>
@@ -288,7 +288,7 @@
                                 <option value="battlefield">Battlefield 2</option>
                                 <option value="other">Other</option>
                             </select>
-                            <select class="games3">
+                            <select class="games3" name="games3">
                                 <option value="singlePlayer" disabled>Single Player</option>
                                 <option value="--0" disabled></option>
                                 <option value="doom">Doom</option>
@@ -315,7 +315,7 @@
                                 <label name="gameLabel">Other Game</label>
                             </div>
                             <div class="col span-2-of-3">
-                                <input type="text" id="otherGame" class="otherGame">
+                                <input type="text" id="otherGame" class="otherGame" name="otherGame">
                             </div>
                         </div>
                     </div>
