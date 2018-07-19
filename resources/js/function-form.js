@@ -90,7 +90,7 @@ $(document).ready(function(){
         }
         if(k == 4){
 			p4();
-			document. getElementsByName('back')[0].value = 'Home';
+			document.getElementsByName('next')[0].value = 'Home';
 			document.getElementById("onehundred").checked = true;
 		}          
         }
@@ -188,7 +188,7 @@ $(document).ready(function(){
 	});
 			
     var p4 = function(){
-        document.getElementsByName('next')[0].style.display = 'none';
+        document.getElementsByName('back')[0].style.display = 'none';
         otherPriority = document.getElementById('otherPriority').value;
     };
 
