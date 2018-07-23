@@ -633,6 +633,10 @@ input[type=submit]{
     margin-top: 25px;
 }
 
+.otherFind{
+    margin-top: 12px;
+}
+
 *:focus {
     outline: none;
 }

@@ -226,7 +226,7 @@ $(document).ready(function(){
     
     /*End of app.js*/
     /* STICKY NAVIGATION */
-    $('.js--section-facilities').waypoint(function(direction){
+    $('.js--section-form').waypoint(function(direction){
         if(direction == "down"){
             $('nav').addClass('sticky-nav');
         }
@@ -234,7 +234,7 @@ $(document).ready(function(){
             $('nav').removeClass('sticky-nav');
         }
     },{
-        offset: '100px'
+        offset: '400px'
     });
     
  

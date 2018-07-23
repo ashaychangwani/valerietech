@@ -16,9 +16,9 @@
     $otherGame=$_POST["otherGame"];
 
 
-    $recipient="mokshjain98@gmail.com";
+    $recipient="ashaychangwani@gmail.com";
     
-    $subject="New contact from $name";
+    $subject="[PC Build] for $name";
 
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
