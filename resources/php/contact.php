@@ -3,7 +3,7 @@
     $email=$_POST["email"];
     $find=$_POST["otherFind"];
 
-    $recipient="ashaychangwani@gmail.com";
+    $recipient="team@valerietech.in";
     
     $subject="[Contact] for $name";
 

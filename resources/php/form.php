@@ -16,7 +16,7 @@
     $otherGame=$_POST["otherGame"];
 
 
-    $recipient="ashaychangwani@gmail.com";
+    $recipient="team@valerietech.in";
     
     $subject="[PC Build] for $name";
 
