@@ -187,7 +187,7 @@ header h3{
     text-align: center;
     margin-top: -100px;
     position: relative; 
-    z-index: 100;
+    z-index: 90;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -323,6 +323,7 @@ header  .fade {
     height: auto;
     box-shadow: 0 2px 2px #efefef;
     transition: 0.75s ease-in-out;
+    z-index: 100;
 }
 
 .sticky-nav .main-nav li a:link,
