@@ -9,7 +9,8 @@
 
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
-    $email_content .= "Source: $find\n";
+    $email_content .= "Source: $findUs\n";
+    $email_content .= "Other (source): $otherFind\n";
 
 
     $email_headers="From: $name <$email>";
