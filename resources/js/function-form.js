@@ -65,11 +65,11 @@ $(document).ready(function(){
         if(k!=4){
         event.preventDefault();
         }
-        /*if( k==2 && (priority1 == null || priority2 == null || priority3 == null) && buttonPressed === "next")
+        if( k==2 && (priority1 == null || priority2 == null || priority3 == null) && buttonPressed === "next")
         {
             alert("Please enter your priorities");
             return;
-        }*/
+        }
         if(buttonPressed === "next"){
         
         if(k == 1){
