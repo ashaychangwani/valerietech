@@ -146,6 +146,11 @@
     
     /*      P1      */
     
+    
+    .p1 input{
+        border-radius: 5px;
+        padding: 5px;
+    }
     .span-2-of-3{
         margin-left: 0;
     }
@@ -297,7 +302,6 @@
     .p1 .span-2-of-3 input{
         text-align: center;
     }
-    
     
     
     /*      P2      */   

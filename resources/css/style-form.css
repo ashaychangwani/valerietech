@@ -419,6 +419,7 @@ header  .fade {
     left: 20%;
 }
 
+
 .submitButton{
     padding: 10px 22px;
     text-decoration: none;
@@ -453,7 +454,7 @@ header  .fade {
 
 .p1 input{
     width: 100%;
-    padding-left: 5px;
+    padding: 8px;
 }
 
 
