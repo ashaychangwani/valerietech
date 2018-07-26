@@ -35,7 +35,7 @@
 {
     
     html{
-        font-size: 17px;
+        font-size: 13px;
     }
     
     .section{
@@ -82,7 +82,7 @@
 {
 
     html{
-        font-size: 14px;
+        font-size: 13px;
     }
     h1{
         font-size: 185%;
@@ -239,7 +239,7 @@
 @media only screen and (max-width: 480px)
 {
     html{
-        font-size: 14px;
+        font-size: 13px;
     }
     .section{
         margin-top: 40px;
