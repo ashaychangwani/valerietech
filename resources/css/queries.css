@@ -230,7 +230,7 @@
         content: "\201C";
         position: absolute;
         display: block;
-        top: -40%;
+        margin-top: -60px;
         left: 3px;
         font-size: 500%;
         line-height: 145%;
