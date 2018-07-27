@@ -31,7 +31,7 @@
                             <a href="#testimonials">Testimonials</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact us</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-ios-menu"></i></a>
@@ -218,7 +218,7 @@
         <section class="section section-testimonials"  id="testimonials">
             <div class="row">
                 <h2>
-                    What our clients are saying
+                    Our success stories
                 </h2>
                 <hr>
             </div>
@@ -266,47 +266,69 @@
                 <hr>
             </div>
             <div class="row">
-                <form method="POST" action="resources/php/contact.php" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
+                <div class="col span-1-of-3 details">
+                    <i class="icon ion-ios-call icon-big"></i>
+                    <h3>
+                        +91-9820990356
+                    </h3>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><i class="icon ion-logo-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon ion-logo-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon ion-logo-googleplus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="icon ion-logo-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col span-2-of-3 span-form">
+                    <form method="POST" action="resources/php/contact.php" class="contact-form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your name" required>
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="findUs">How did you find us?</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="findUs" id="find-us">
+                                    <option value="friends">Friends and Family</option>
+                                    <option value="recommendation" selected>Recommendation</option>
+                                    <option value="search-engine">Search engine</option>
+                                    <option value="ad">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <input type="text" id="otherFind" class="otherFind" name="otherFind" placeholder="How did you hear about us?">
+                            </div>
                         </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <div class="row">
+                            <div class="col span-1-of-3 blank">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="findUs">How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="findUs" id="find-us">
-                                <option value="friends">Friends and Family</option>
-                                <option value="recommendation" selected>Recommendation</option>
-                                <option value="search-engine">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
-							<input type="text" id="otherFind" class="otherFind" name="otherFind" placeholder="How did you hear about us?">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3 blank">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
         <footer>
@@ -323,31 +345,15 @@
                             <a href="#">Build a PC</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
-                    <ul class="social-icons">
-                        <li>
-                            <a href="#"><i class="icon ion-logo-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon ion-logo-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon ion-logo-googleplus"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon ion-logo-instagram"></i></a>
-                        </li>
-                    </ul>
+                    <p>
+                        &#169;ValerieTech, 2018
+                    </p>
                 </div>
-            </div>
-            <div class="row">
-                <p>
-                    team@valerietech.in<br>+91-(982)099-0356<br>Designed and created by the Valerie Tech team
-                </p>
             </div>
         </footer>
     </body>

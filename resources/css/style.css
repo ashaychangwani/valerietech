@@ -140,32 +140,26 @@ header h3{
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 300%;
+  font-size: 450%;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+    opacity: 0;
 }
 
-.test{
-  position: absolute;
-  top: 0%;
-  color: white;
-  font-size: 300%;
-  border-radius: 0 3px 3px 0;
-
-}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  opacity: 0.8;
 }
+
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
   background-color: #90cffe;
   border-radius: 50%;
   display: inline-block;
@@ -214,7 +208,7 @@ input[type=submit],
     text-decoration: none;
     font-weight: 300;
     color: #fff;
-    border-radius: 200px;
+    border-radius: 10px;
     border: 1px solid #1B9CFC;
     text-align: center;
     -webkit-transition: border 0.3s, background-color 0.3s, color 0.3s;
@@ -241,6 +235,7 @@ input[type=submit]:active,
     background-color: #0379d0;
     border: 1px solid #0379d0;
 }
+
 
 
 .btn-ghost:hover,
@@ -360,6 +355,13 @@ input[type=submit]:active,
     margin-right: 8px;
 }
 
+header .btn-ghost:link,
+header .btn-ghost:visited{
+    background-image: linear-gradient(rgba(96, 96, 96, 0.5),rgba(96, 96, 96, 0.5));
+}
+
+
+
 /*----------------------------------*/
 /*  MISSION */
 /*----------------------------------*/
@@ -373,7 +375,9 @@ input[type=submit]:active,
 
 .section-mission h3{
     line-height: 145%;
-    font-size: 140%;
+    font-size: 150%;
+    font-weight: 300;
+    letter-spacing: 0.6px;
 }
 
 
@@ -551,9 +555,9 @@ blockquote:before{
     content: "\201C";
     position: absolute;
     display: block;
-    top: -40%;
+    margin-top: -90px;
     left: -3px;
-    font-size: 500%;
+    font-size: 750%;
     line-height: 145%;
 }
 
@@ -566,10 +570,14 @@ blockquote:before{
 /*----------------------------------*/
 
 .contact-form{
-    width: 60%;
-    margin: 25px auto 0 auto;
+    width: 80%;
+    margin: 25px;
+    text-align: right;
 }
 
+.contact-form .row:nth-of-type(4){
+    text-align: left;
+}
 
 input[type=text],
 input[type=email],
@@ -592,8 +600,26 @@ input[type=submit]{
 *:focus {
     outline: none;
 }
-
-
+.section-contact .details{
+    padding-right: 30px;
+    text-align: right;
+}
+.span-form{
+    height: 100%;
+    padding-left: 30px;
+    border-left: 1px #ddd dashed;
+}
+.section-contact .icon-big
+{
+    font-size: 300%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.section-contact .span-1-of-3 h3
+{
+    display: inline-block;
+    margin-left: 20px;
+}
 
 
 /*----------------------------------*/
@@ -620,7 +646,6 @@ footer row{
 
 .social-icons{
     list-style: none;
-    float: right;
 }
 
 
@@ -662,9 +687,8 @@ footer row{
 
 footer p{
     color: #888;
-    text-align: center;
     font-size: 110%;
-    margin-top: 15px;
+    text-align: right;
     line-height: 150%;
 }
 

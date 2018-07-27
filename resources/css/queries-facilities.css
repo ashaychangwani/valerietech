@@ -128,14 +128,10 @@
         margin: 20px auto;
         position: relative;
     }
-    
-    header .btn-full:active,
-    header .btn-full:link{
-        margin-left: 17%;
-    }
-     
+   
     header .btn-ghost:active,
     header .btn-ghost:link{
+        margin-right: 20px;
     }
     .prev, .next {
         top: 40%;
@@ -150,6 +146,11 @@
     }
     
     
+    .prev,
+    .next{
+        display: none;
+        
+    }
     
     /*      FACILITIES      */
     .section-facilities h3{
@@ -294,7 +295,6 @@
     .hero-text-box{
         top:60%;
         padding: 0 3%;
-        text-align: center;
     }
     header .btn:link,
     header .btn:active{

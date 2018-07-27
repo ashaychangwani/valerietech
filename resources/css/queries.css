@@ -115,7 +115,7 @@
         font-size: 13px;
     }
     h1{
-        font-size: 130%;
+        font-size: 180%;
     }
     .section{
         margin-top: 40px;
@@ -145,6 +145,12 @@
         background-position: center;
         background-attachment: scroll;
     }
+    
+    .prev,
+    .next{
+        display: none;
+        
+    }
     header{
         height: 60vh;
         min-height: 570px;
@@ -159,13 +165,10 @@
         position: relative;
     }
     
+     
     header .btn-full:active,
     header .btn-full:link{
-        margin-left: 17%;
-    }
-     
-    header .btn-ghost:active,
-    header .btn-ghost:link{
+        margin-right: 20px;
     }
     .prev, .next {
         top: 40%;
@@ -365,13 +368,13 @@
     .hero-text-box{
         top:60%;
         padding: 0 3%;
-        text-align: center;
     }
     header .btn:link,
     header .btn:active{
         width: 120px;
         padding: 10px 10px;
     }
+    
     
     
     /*      WHY US      */
