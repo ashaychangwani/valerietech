@@ -212,6 +212,8 @@
     
     .section-contact .span-2-of-3{
         text-align: center;
+        padding-left: 0;
+        border-left: none;
     }
     
     /*      FOOTER      */
