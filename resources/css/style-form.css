@@ -519,7 +519,9 @@ header  .fade {
     margin-bottom: 25px;
 }
 
-
+.labels{
+    line-height: 38px;
+}
 
 /*----------------------------------*/
 /*  FOOTER  */

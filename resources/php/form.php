@@ -1,6 +1,7 @@
 <?php
     $name=$_POST["name"];
     $email=$_POST["email"];
+    $phone=$_POST["phone"];
     $amount=$_POST["amount"];
     $priority1=$_POST["priority1"];
     $priority2=$_POST["priority2"];
@@ -22,6 +23,7 @@
 
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
+    $email_content .= "Phone number: $phone\n";
     $email_content .= "Amount: $amount\n";
     $email_content .= "Priority 1: $priority1\n";
     $email_content .= "Priority 2: $priority2\n";
