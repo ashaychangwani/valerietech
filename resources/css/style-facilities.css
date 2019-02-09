@@ -678,6 +678,11 @@ input[type=submit]{
     display: inline-block;
     margin-left: 20px;
 }
+
+    .labels{
+        line-height: 34px;
+    }
+    
 /*----------------------------------*/
 /*  FOOTER  */
 /*----------------------------------*/

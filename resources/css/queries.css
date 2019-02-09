@@ -104,6 +104,10 @@
         width: 80%;
         margin: 25px auto 0 auto;
     }
+    
+    .labels{
+        line-height: 32px;
+    }
 }
 
 
@@ -292,6 +296,11 @@
         border-left: none;
     }
     
+    .labels{
+        line-height: 20px;
+        text-align: left;
+    }
+    
     /*      FOOTER      */
     
     
@@ -409,6 +418,12 @@
     }
     .contact-form label{
         font-size: 110%;
+    }
+    .labels{
+        line-height: 15px
+    }
+    .contact-form:first-child{
+        margin-top: 30px;
     }
     
     /*      FOOTER      */   

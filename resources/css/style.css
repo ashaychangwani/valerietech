@@ -621,6 +621,9 @@ input[type=submit]{
     margin-left: 20px;
 }
 
+.labels{
+    line-height: 34px;
+}
 
 /*----------------------------------*/
 /*  footer */

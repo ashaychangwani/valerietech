@@ -74,6 +74,10 @@
         width: 80%;
         margin: 25px auto 0 auto;
     }
+    
+    .labels{
+        line-height: 30px;
+    }
 }
 
 
@@ -182,6 +186,7 @@
     
     
     
+    
     .section-contact .row{
         margin: 10px auto;
     }
@@ -195,9 +200,9 @@
     
     .section-contact .contact-form{
         margin-top: 0;
-        padding-left: 20px;
-        padding-right: 20px;
         width: 90%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .section-contact{
         padding: 0 10px;
@@ -210,10 +215,26 @@
         margin: 10px auto;
     }
     
+    .section-contact .span-1-of-3{
+        padding-right: 0;
+    }
     .section-contact .span-2-of-3{
         text-align: center;
         padding-left: 0;
         border-left: none;
+    }
+    
+    .col:first-child.labels{
+        margin-left: 1.5%;
+        line-height: 20px;
+        text-align: left;
+    }
+    .section-contact .details{
+        text-align: center;
+    }
+    .social-icons{
+        text-align: center;
+        float: none;
     }
     
     /*      FOOTER      */
@@ -349,8 +370,6 @@
         font-size: 110%;
     }
     
-    
-    
     /*      FOOTER      */   
     
     
@@ -366,9 +385,5 @@
     .footer-nav{
         float: none;
         text-align: center;
-    }
-    .social-icons{
-        text-align: center;
-        float: none;
     }
 }
