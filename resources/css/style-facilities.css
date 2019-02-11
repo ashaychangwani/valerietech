@@ -279,12 +279,31 @@ input[type=submit]:active,
 .logo{
     margin-top: 20px;
     margin-left: 20px;
-    height: 100px;
+    height: 65px;
     width: auto;
     float: left;
 }
 
-
+.logo:hover{
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 0.6s;
+  animation-name: fade2;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes fade2 {
+  from {height: 65px;} 
+    25% {height: 75px;}
+    50% {height: 70px;}
+    75% {height: 75px;}
+  to {height: 65px;}
+}
+@keyframes fade2 {
+  from {height: 65px;} 
+    25% {height: 75px;}
+    50% {height: 70px;}
+    75% {height: 75px;}
+  to {height: 65px;}
+}
 .main-nav{
     float: right;
     list-style: none;

@@ -258,10 +258,54 @@ input[type=submit]:active,
 .logo{
     margin-top: 20px;
     margin-left: 20px;
-    height: 100px;
+    height: 75px;
     width: auto;
     float: left;
+    position: relative;
+    
 }
+
+.logo:hover{
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 0.6s;
+  animation-name: fade2;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes fade2 {
+  from {height: 75px;} 
+    25% {height: 85px;}
+    50% {height: 80px;}
+    75% {height: 85px;}
+  to {height: 75px;}
+}
+@keyframes fade2 {
+  from {height: 75px;} 
+    25% {height: 85px;}
+    50% {height: 80px;}
+    75% {height: 85px;}
+  to {height: 75px;}
+}
+/*
+
+.logo:before{
+    content: url("../img/Logo-white.png");
+    position: relative;
+    z-index: 2001;
+    
+    transition: opacity 0.5s ease;
+}
+
+.logo:after{
+    content: url("../img/Logo.png");
+    position: absolute;
+    z-index: 2000;
+}
+
+.logo:hover:before{
+    opacity: 0;
+}
+*/
+
 
 
 .main-nav{
@@ -529,8 +573,8 @@ hr{
 .section-testimonials{
     padding: 70px 30px;
     height: 480px;
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.65)),to(rgba(0, 0, 0, 0.65))), url(img/testimonials-banner.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(img/testimonials-banner.jpg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.65)),to(rgba(0, 0, 0, 0.65))), url(../img/testimonials-banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(../img/testimonials-banner.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
