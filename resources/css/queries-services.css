@@ -87,11 +87,11 @@
     }
     
    
-    /*      FACILITIES      */
-    .section-facilities h3{
+    /*      services      */
+    .section-services h3{
         font-size: 135%;
     }
-    .section-facilities p{
+    .section-services p{
         font-size: 115%;
     }
     
@@ -240,16 +240,16 @@
     
     
     
-    /*      FACILITIES      */
+    /*      services      */
     
-    .section-facilities h3{
+    .section-services h3{
         font-size: 150%;
     }
-    .section-facilities p{
+    .section-services p{
         font-size: 120%;
     }
     
-    .section-facilities .col{
+    .section-services .col{
         width: 90%;
         left: 5%;
     }

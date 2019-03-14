@@ -4,16 +4,6 @@ var timeOut;
 
 
 
-function plusSlides(n) {
-    clearTimeout(timeOut);
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    clearTimeout(timeOut);
-  showSlides(slideIndex = n);
-}
-
 
 $(document).ready(function(){
 	
@@ -21,7 +11,7 @@ $(document).ready(function(){
 	document.querySelector('.otherFind').style.display = "none";
     
     /* STICKY NAVIGATION */
-    $('.js--section-facilities').waypoint(function(direction){
+    $('.js--section-services').waypoint(function(direction){
         if(direction == "down"){
             $('nav').addClass('sticky-nav');
         }

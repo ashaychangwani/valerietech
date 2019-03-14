@@ -1,35 +1,9 @@
 var slideIndex = 1;
 var count=0;
 var timeOut;
-showSlides(slideIndex);
 
 
 
-function showSlides(n) {
-  var i;
-    count++;
-  var slides = document.getElementsByClassName("banners");
-  var htext = document.getElementsByClassName("hero-text");
-  var hbuttons = document.getElementsByClassName("hero");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-      htext[i].style.display="none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  hbuttons[0].style.display="inline-block";
-    hbuttons[1].style.display="inline-block";
-  htext[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-  timeOut=setTimeout(plusSlides,5000,1);
-    
-    
-}
 $(document).ready(function(){
 	
 	var find;

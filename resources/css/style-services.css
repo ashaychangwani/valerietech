@@ -161,7 +161,7 @@ header h3{
   font-weight: bold;
   font-size: 300%;
   transition: 0.6s ease;
-    opacity: 0;
+    opacity: 0.2;
   border-radius: 0 3px 3px 0;
 }
 
@@ -397,15 +397,15 @@ input[type=submit]:active,
 
 
 /*----------------------------------*/
-/*  FACILITIES */
+/*  services */
 /*----------------------------------*/
 
 
-.section-facilities div{
+.section-services div{
     padding: 5px;
 }
 
-.section-facilities .col{
+.section-services .col{
     position: relative;
     width: 80%;
     display: block;
@@ -418,7 +418,7 @@ input[type=submit]:active,
     margin-left: 0;
 }
 
-.section-facilities h3{
+.section-services h3{
     color: #0379d0;
     text-align: center;
     font-size: 120%;
@@ -427,7 +427,7 @@ input[type=submit]:active,
     line-height: 1.15;
 }
 
-.section-facilities p{
+.section-services p{
     font-size: 105%;
     text-align:center;
     line-height: 145%;

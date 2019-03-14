@@ -3,15 +3,6 @@ var count=0;
 var timeOut;
 
 
-function plusSlides(n) {
-    clearTimeout(timeOut);
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    clearTimeout(timeOut);
-  showSlides(slideIndex = n);
-}
 
 
 $(document).ready(function(){

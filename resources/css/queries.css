@@ -51,22 +51,22 @@
     }
     
     
-    /*      FACILITIES      */
+    /*      services      */
     
     
-    .section-facilities .col:first-child p:before,
-    .section-facilities .col:nth-child(3) p:before{
+    .section-services .col:first-child p:before,
+    .section-services .col:nth-child(3) p:before{
         content: "&#10";
         display: block;
         color: white;    
     }
-    .section-facilities .col:first-child{
+    .section-services .col:first-child{
     padding-left: 10px
     }
-    .section-facilities .col:last-child{
+    .section-services .col:last-child{
         padding-right: 10px;
     }
-    .section-facilities h3{
+    .section-services h3{
         font-size: 135%;
     }
     
@@ -122,22 +122,22 @@
     }
     
     
-    /*      FACILITIES      */
+    /*      services      */
     
     
-    .section-facilities .col:first-child p:before,
-    .section-facilities .col:nth-child(3) p:before{
+    .section-services .col:first-child p:before,
+    .section-services .col:nth-child(3) p:before{
         display: none;
     }
     
-    .section-facilities .col{
+    .section-services .col{
         width: 80%;
         margin-left: 10%;
         text-align: center;
     }
     
-    .section-facilities h3,
-    .section-facilities i{
+    .section-services h3,
+    .section-services i{
         text-align: center;
     }
     

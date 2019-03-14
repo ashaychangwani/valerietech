@@ -1,6 +1,16 @@
 
 showSlides(slideIndex);
 
+function plusSlides(n) {
+    clearTimeout(timeOut);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(timeOut);
+  showSlides(slideIndex = n);
+}
+
 function showSlides(n) {
       var i;
       count++;
