@@ -1,24 +1,7 @@
 /*1200px to 1450px*/
 @media only screen and (max-width: 1450px)
 {   
-    /*      HEADER      */
-    .hero-text-box{
-        position: absolute;
-        padding: 0 6%;
-        left: 0;
-        width: 100%;
-    }
-
-    .hero-text {
-        position: relative;
-        z-index: 0;
-        width: 100%;
-        display: none;
-    }
     
-    h1{
-        font-size: 190%;
-    }
     
 }
 /* Big tablet to 1200: 1023px to 1200px*/
@@ -42,15 +25,6 @@
     }
     
     
-    /*      HEADER      */
-    
-    
-    h1{
-        font-size: 180%;
-    }
-    .hero-text-box{
-        padding: 0 10%;
-    }
     
     /*      P2      */
     
@@ -106,49 +80,6 @@
         width: 30%;
     }
     
-    /*      HEADER      */
-    
-    .banners{
-        background-position: center;
-        background-attachment: scroll;
-    }
-    header{
-        height: 60vh;
-        min-height: 570px;
-    }
-    .banner-container{
-        height: 60vh;
-        min-height: 570px;
-    }
-    header .btn:link,
-    header .btn:active{
-        margin: 20px auto;
-        position: relative;
-    }
-    
-    
-     
-    header .btn-ghost:active,
-    header .btn-ghost:link{
-        margin-right: 20px;
-     }
-    .prev, .next {
-        top: 40%;
-    }
-    .dots{
-        margin-top: -50px;
-    }
-    
-    .hero-text-box{
-        top:60%;
-        padding: 0 3%;
-    }
-    
-    .prev,
-    .next{
-        display: none;
-        
-    }
     
     /*      P1      */
     
@@ -282,24 +213,6 @@
     .sticky-nav .mobile-nav-icon {margin: 10px 10px;}
     .sticky-nav .mobile-nav-icon i {color: #555;}
 
-    
-    /*      HEADER      */
-    
-    
-    
-    header .btn-full:active,
-    header .btn-full:link{
-        margin-left: 0;
-    }
-    .hero-text-box{
-        top:60%;
-        padding: 0 3%;
-    }
-    header .btn:link,
-    header .btn:active{
-        width: 120px;
-        padding: 10px 10px;
-    }
     
     /*      P1      */   
     .p1 .span-1-of-3{
