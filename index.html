@@ -31,6 +31,12 @@
           gtag('config', 'UA-37614837-2');
         </script>
     <link rel="shortcut icon" type="image/png" href="/resources/img/favicon.png"/>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
     <title>Valerie Tech</title>
 </head>
 
@@ -38,79 +44,8 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-597WRK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <nav>
-            <div class="row">
-                <img src="resources/img/logo-white.png" alt="Logo" class="logo">
-                <img src="resources/img/logo.png" alt="Logo" class="logo-black">
-                <ul class="main-nav js--main-nav">
-                    <li>
-                        <a href="#why-us">Why us?</a>
-                    </li>
-                    <li>
-                        <a href="#services">services</a>
-                    </li>
-                    <li>
-                        <a href="#testimonials">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-ios-menu"></i></a>
-            </div>
-        </nav>
-        <div class="banner-container">
-
-            <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/img/hero-image.jpg')"></div>
-
-            <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/img/banner-1.jpg')"></div>
-
-            <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/img/banner-2.jpg')"></div>
-
-            <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/img/banner-3.jpg')"></div>
-
-            <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/img/banner-4.jpg')"></div>
-
-            <div class="banners fade" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url('resources/img/banner-5.jpg')"></div>
-            <div class="hero-text-box">
-                <h1 class="hero-text fade" style="text-transform: none;">
-                    TAILOR-MADE PCs.<br>WE BUILD, YOU BRAG.
-                </h1>
-                <!--Built and personalized by <img src="/resources/img/favicon.png" style="display:inline-block;height:70px;width:auto;position:relative;
-                        top: 20px;">
-                -->
-                <h1 class="hero-text fade">
-                    Tight budget but want to pwn some noobs?<br>We’ve got you covered.
-                </h1>
-                <h1 class="hero-text fade">
-                    Customize. Personalize. Maximize.<br>A build to suit all your needs.
-                </h1>
-                <h1 class="hero-text fade">
-                    Want a Mac but love your kidney?<br>We might have the solution for you!
-                </h1>
-                <h1 class="hero-text fade">
-                    An elite experience at your workplace.<br>Better performance at a lower price.
-                </h1>
-                <h1 class="hero-text fade">
-                    Spend less time configuring,<br>more time mining.
-                </h1>
-                <a class="btn btn-full hero" href="form">Build me a PC!</a>
-                <a class="btn btn-ghost hero js--scroll-to-services" href="#">Show me more</a>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
+    <header id="header">
+        
     </header>
     <section class="section section-mission js--section-mission">
         <div class="row">
@@ -238,7 +173,7 @@
             </div>
         </div>
         <div class="row learn-row">
-            <a class="btn btn-ghost btn-learn" href="services">Facilties and FAQ</a>
+            <a class="btn btn-ghost btn-learn" href="services">Services and FAQ</a>
         </div>
     </section>
     <section class="section section-testimonials" id="testimonials">
@@ -365,30 +300,8 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="row">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="services">services</a>
-                    </li>
-                    <li>
-                        <a href="form">Build a PC</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <p>
-                    &#169;ValerieTech, 2018
-                </p>
-            </div>
-        </div>
+    <footer id="footer">
+        
     </footer>
 </body>
 <script src="vendors/js/jquery.waypoints.min.js"></script>
