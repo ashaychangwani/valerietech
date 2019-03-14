@@ -121,11 +121,11 @@ header nav{
 
 .banners{
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
 }
+
 
 header h3{
     margin-bottom: 40px;

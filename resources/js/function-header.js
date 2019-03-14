@@ -1,6 +1,9 @@
-
 showSlides(slideIndex);
 
+document.getElementsByClassName("banners")[2].style.backgroundPosition="center";
+document.getElementsByClassName("banners")[3].style.backgroundPosition="center";
+document.getElementsByClassName("banners")[4].style.backgroundPosition="center";
+document.getElementsByClassName("banners")[5].style.backgroundPosition="center";
 function plusSlides(n) {
     clearTimeout(timeOut);
   showSlides(slideIndex += n);
