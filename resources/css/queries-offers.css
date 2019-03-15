@@ -1,0 +1,259 @@
+/*1200px to 1450px*/
+@media only screen and (max-width: 1450px)
+{   
+    /*      WHY US      */
+    
+    .section-offers p{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+}
+/* Big tablet to 1200: 1023px to 1200px*/
+@media only screen and (max-width: 1200px)
+{
+    /*      WHY US      */
+    
+    .section-offers p{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+
+/* Small tablet to big tablet: 768 to 1023px */
+@media only screen and (max-width: 1023px)
+{
+    
+    html{
+        font-size: 14px;
+    }
+    
+    .section{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+    
+    
+    /*      OFFERS      */
+    
+    
+    .section-offers p{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    
+    /*      CONTACT      */
+    
+    
+    .contact-form{
+        width: 80%;
+        margin: 25px auto 0 auto;
+    }
+    
+    .labels{
+        line-height: 32px;
+    }
+}
+
+
+/* Small phones to small tablets: from 481 to 767 */
+@media only screen and (max-width: 767px)
+{
+
+    html{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 180%;
+    }
+    .section{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .col{
+        width: 99%;
+    }
+    .logo{
+        margin-top: 20px;
+        height: 50px;
+        width: auto;
+        float: left;
+    }
+    .main-nav li{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .main-nav{
+        margin-top: 25px;
+    }
+    
+    
+    /*      CONTACT      */
+    
+    
+    .section-contact .row{
+        margin: 10px auto;
+    }
+    
+    .section-contact hr{
+        margin-bottom: 10px
+    }
+    .section-contact .row:nth-of-type(2) .row{
+        margin-top: 0;
+    }
+    
+    .section-contact .contact-form{
+        margin-top: 0;
+        width: 90%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .section-contact{
+        padding: 0 10px;
+    }
+    .blank{
+        display: none;
+    }
+    
+    input[type=submit]{
+        margin: 10px auto;
+    }
+    
+    .section-contact .span-1-of-3{
+        padding-right: 0;
+    }
+    .section-contact .span-2-of-3{
+        text-align: center;
+        padding-left: 0;
+        border-left: none;
+    }
+    
+    .labels{
+        line-height: 20px;
+        text-align: left;
+    }
+    
+    /*      FOOTER      */
+    
+    
+    footer{
+        padding: 25px 15px;
+    }
+    footer .col{
+        margin-right: 0;
+    }
+    footer .col:first-child{
+        width: 60%;
+    }
+    footer .col:last-child{
+        width: 38%;
+    }
+    
+    .footer-nav li{
+        margin-right: 10px;
+    }
+}
+
+
+/*Small phones from 0 to 480px*/
+@media only screen and (max-width: 480px)
+{
+    html{
+        font-size: 13px;
+    }
+    .section{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .main-nav{
+        display: none;
+    }
+    
+    .mobile-nav-icon{
+        display: inline-block;
+    }
+    .main-nav{
+        float: left;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .main-nav li{
+        display: block;
+        padding: 5px 0;
+        margin: 0;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0; 
+        font-size: 100%;
+    }
+
+    .sticky-nav .main-nav{
+        margin-top: 10px;
+    }
+    
+    .sticky-nav .main-nav li a:link,
+    .sticky-nav .main-nav li a:visited{
+        padding: 10px 0;
+    }
+    
+    .sticky-nav .mobile-nav-icon {margin: 10px 10px;}
+    .sticky-nav .mobile-nav-icon i {color: #555;}
+    
+    
+    /*      WHY US      */
+    
+    
+    .section-offers{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    /*      CONTACT      */
+    
+    .section-contact .span-2-of-3{
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .section-contact .span-1-of-3{
+        text-align: center;
+    }
+    .contact-form label{
+        font-size: 110%;
+    }
+    .labels{
+        line-height: 15px
+    }
+    .contact-form:first-child{
+        margin-top: 30px;
+    }
+    
+    /*      FOOTER      */   
+    
+    
+    
+    footer .col:first-child{
+        width: 100%;
+    }
+    footer .col:last-child{
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .footer-nav{
+        float: none;
+        text-align: center;
+    }
+    .social-icons{
+        text-align: center;
+        float: none;
+    }
+    
+    
+}
