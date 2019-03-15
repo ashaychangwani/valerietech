@@ -432,13 +432,12 @@ hr{
 }
 
 .section-offers h4{
-    font-size: 120%;
+    font-size: 150%;
     text-align: center;
-    padding-bottom: 5px;
-    padding-top: 25px;
     font-weight: 400;
     letter-spacing: 1.2px;
     color:#1b9cfc;
+    text-transform:uppercase;
     
 }
 .section-offers p{
@@ -451,6 +450,27 @@ hr{
     color: #4a4a4a;
 }
 
+.offer{
+    padding: 40px;
+}
+.offer{
+    position: relative;
+    padding: 100px;
+}
+
+.offer i{
+    position: absolute;
+    top:0%;
+    right: 8px;
+    z-index: 3;
+    font-size: 30px;   
+    text-align: right;
+    
+}
+
+.info2{
+    display: none;
+}
 
 
 
