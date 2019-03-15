@@ -405,7 +405,7 @@ input[type=submit]:active,
 
 
 /*----------------------------------*/
-/*  WHY US */
+/*  OFFERS */
 /*----------------------------------*/
 
 .section-offers{
@@ -437,7 +437,8 @@ hr{
     padding-bottom: 5px;
     padding-top: 25px;
     font-weight: 400;
-    letter-spacing: 1.2px
+    letter-spacing: 1.2px;
+    color:#1b9cfc;
     
 }
 .section-offers p{

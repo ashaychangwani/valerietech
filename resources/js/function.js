@@ -1,75 +1,5 @@
-var slideIndex = 1;
-var count=0;
-var timeOut;
 
 $(document).ready(function(){
-	
-	var find;
-	document.querySelector('.otherFind').style.display = "none";
-	
-    /* STICKY NAVIGATION */
-    $('.js--section-mission').waypoint(function(direction){
-        if(direction == "down"){
-            $('nav').addClass('sticky-nav');
-        }
-        else{
-            $('nav').removeClass('sticky-nav');
-        }
-    },{
-        offset: '100px'
-    });
-    
-    
-    
-    /*Smooth Scroll for Buttons*/
-    $('.js--scroll-to-contact').click(function(){
-        $('html,body').animate({scrollTop: $('.js--section-contact').offset().top},1000);
-    });
-    $('.js--scroll-to-services').click(function(){
-        $('html,body').animate({scrollTop: $('.js--section-services').offset().top - 80},1000);
-    });
-    
-    
-    
-    /* SMOOTH SCROLLING */
-       $('a[href*="#"]')
-      // Remove links that don't actually link to anything
-      .not('[href="#"]')
-      .not('[href="#0"]')
-      .click(function(event) {
-        // On-page links
-        if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-          && 
-          location.hostname == this.hostname
-        ) {
-          // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-            // Only prevent default if animation is actually gonna happen
-            event.preventDefault();
-            $('html, body').animate({
-              scrollTop: target.offset().top-80
-            }, 1000, function() {
-              // Callback after animation
-              // Must change focus!
-              var $target = $(target);
-              $target.focus();
-              if ($target.is(":focus")) { // Checking if the target was focused
-                return false;
-              } else {
-                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-              };
-            });
-          }
-        }
-      });
-    
-    
-
     /* Testimonials animation */
         var divs1 = $('blockquote[id^="testimonials1-"]').hide(),
             i1 = 0;
@@ -122,28 +52,10 @@ $(document).ready(function(){
          $('.js--wp-1').addClass('animated fadeIn');
     },{
         offset: '65%'
-    })
-       
+    });
     
-    /*Mobile nav*/
-    
-    $('.js--nav-icon').click(function(){
-        var nav= $('.js--main-nav');
-        var icon= $('.js--nav-icon i');
-        
-        nav.slideToggle(200);
-        
-        if(icon.hasClass('icon ion-ios-menu')){
-            icon.removeClass('icon ion-ios-menu');
-            icon.addClass('icon ion-ios-close');
-        }
-        else{
-            icon.removeClass('icon ion-ios-close');
-            icon.addClass('icon ion-ios-menu');
-        }
-        
-    })
-	
+	var find;
+	document.querySelector('.otherFind').style.display = "none";
 	document.getElementById('find-us').addEventListener('change', function(){
 		find = document.getElementById('find-us').selectedIndex;
 		console.log(find);
