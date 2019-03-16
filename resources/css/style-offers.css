@@ -35,6 +35,11 @@ p{
     outline: none;
 }
 
+h1:hover,h2:hover,h3:hover,h4:hover,p:hover,
+h1:active,h2:active,h3:active,h4:active,p:active{
+    cursor: default;
+}
+
 /*----------------------------------*/
 /*  REUSABLE COMPONENTS */
 /*----------------------------------*/
@@ -431,6 +436,9 @@ hr{
     background-image: linear-gradient(to right, rgb(27, 156, 252, 0), rgb(27, 156, 252, 0.75), rgb(27, 156, 252, 0));
 }
 
+.section-offers hr{
+    margin-bottom: 60px;
+}
 .section-offers h4{
     font-size: 150%;
     text-align: center;
@@ -440,28 +448,29 @@ hr{
     text-transform:uppercase;
     
 }
-.section-offers p{
-    font-size: 100%;
-    line-height: 145%;
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-    font-weight: 300;
-    color: #4a4a4a;
-}
 
 .offer{
-    padding: 40px;
-}
-.offer{
     position: relative;
-    padding: 100px;
+    padding-bottom: 0px;
+    height: 250px;
+    background-repeat: no-repeat;
+    display: table;
+    vertical-align: middle;
+}
+
+.row-offer
+{
+    margin-top: 60px;
+}
+
+.row-offer:nth-of-type(2){
+    margin-top: 0;
 }
 
 .offer i{
     position: absolute;
-    top:0%;
-    right: 8px;
+    bottom:0%;
+    right: 20px;
     z-index: 3;
     font-size: 30px;   
     text-align: right;
@@ -469,9 +478,67 @@ hr{
 }
 
 .info2{
-    display: none;
+    opacity: 0;
 }
 
+.offer-text{
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+}
+
+.offer-text h4{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.offer-desc{
+    opacity: 0;
+    display: table-cell;
+    height: 250px;
+    vertical-align: middle;    
+    width: 100% !important; 
+    padding: 0 15%;
+    text-align: center;
+    font-size: 120%;
+    color: #0379d0;
+    font-weight: 400;
+    border-top: 3px #90cffe double;
+    border-right: 3px #90cffe double;
+    background-image: linear-gradient(rgb(252, 252, 252,0.85),rgb(252, 252, 252,0.85));
+    transition: 0.3s ease-in;
+}
+.info,.info2{
+    transition: 0.3s ease-in-out;
+}
+
+/*          HOVER WAALA MAGIC         */
+
+.offer:hover,
+.offer:active{
+    
+}
+
+.offer:hover > .info2,
+.offer:active > .info2
+{
+    opacity: 1;
+}
+
+.offer:hover > .info,
+.offer:active > .info
+{
+    opacity: 0;
+}
+
+.offer:hover > .offer-desc,
+.offer:active > .offer-desc
+{
+    opacity: 1;
+    cursor: default;
+}
 
 
 /*----------------------------------*/

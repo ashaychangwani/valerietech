@@ -35,6 +35,14 @@ p{
     outline: none;
 }
 
+
+h1:hover,h2:hover,h3:hover,h4:hover,p:hover,
+h1:active,h2:active,h3:active,h4:active,p:active{
+    cursor: default;
+}
+
+
+
 /*----------------------------------*/
 /*  REUSABLE COMPONENTS */
 /*----------------------------------*/
