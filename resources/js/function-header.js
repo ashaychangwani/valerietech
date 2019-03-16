@@ -66,6 +66,11 @@ $(document).ready(function(){
       .not('[href="#"]')
       .not('[href="#0"]')
       .click(function(event) {
+       //To close menu only if it's a mobile screen:
+       if($("#hamburg").css("display")!="none")
+       {
+           closeMenu();
+       }
         // On-page links
         if (
           location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -82,6 +87,7 @@ $(document).ready(function(){
             $('html, body').animate({
               scrollTop: target.offset().top-80
             }, 1000, function() {
+                
               // Callback after animation
               // Must change focus!
               var $target = $(target);
@@ -102,7 +108,6 @@ $(document).ready(function(){
     $('.js--nav-icon').click(function(){
         var nav= $('.js--main-nav');
         var icon= $('.js--nav-icon i');
-        
         nav.slideToggle(200);
         
         if(icon.hasClass('icon ion-ios-menu')){
@@ -115,4 +120,20 @@ $(document).ready(function(){
         }
         
     });
+    
 });
+
+function closeMenu(){
+        var nav= $('.js--main-nav');
+        var icon= $('.js--nav-icon i');
+        nav.slideToggle(200);
+        
+        if(icon.hasClass('icon ion-ios-menu')){
+            icon.removeClass('icon ion-ios-menu');
+            icon.addClass('icon ion-ios-close');
+        }
+        else{
+            icon.removeClass('icon ion-ios-close');
+            icon.addClass('icon ion-ios-menu');
+        }
+}
