@@ -630,6 +630,7 @@ blockquote:before{
 
 input[type=text],
 input[type=email],
+input[type=phone],
 select{
     width: 100%;
     padding: 7px;
