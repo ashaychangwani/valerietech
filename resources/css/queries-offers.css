@@ -18,6 +18,12 @@
         width: 70%;
         margin-left: 15%;
     }
+    
+    /*      OFFERS      */
+    
+    .offer{
+        width:50%;
+    }
 }
 
 
@@ -42,6 +48,10 @@
     .section-offers p{
         width: 80%;
         margin-left: 10%;
+    }
+    
+    .offer{
+        width:50%;
     }
     
     
@@ -69,7 +79,7 @@
     h1{
         font-size: 180%;
     }
-    .section{
+    .section .section-offers{
         margin-top: 40px;
         margin-bottom: 30px;
     }
@@ -89,6 +99,12 @@
     
     .main-nav{
         margin-top: 25px;
+    }
+    
+    /*      OFFERS      */
+    
+    .offer{
+        width:50%;
     }
     
     
@@ -214,6 +230,24 @@
         padding-top: 40px;
         padding-bottom: 30px;
     }
+    
+    
+    /*      OFFERS      */
+    
+    .offer{
+        width: 75%;
+        margin-left: 15%;
+        padding: 10px 10px;
+        border-top: 3px #90cffe double;
+        border-right: 3px #90cffe double;
+    }
+    
+    .offer-text h4{
+        font-size: 135%;
+        margin-left: 2%;
+        padding: 10px 5px;
+    }
+    
     
     /*      CONTACT      */
     
