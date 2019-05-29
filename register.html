@@ -3,13 +3,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="We build custom PCs and laptops for gaming, content creation and other professional workloads. Our service, maintenance, and upgrade facilities remain unsurpassed in Mumbai.">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-597WRK6');</script>
-    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -19,16 +12,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/queries-header.css">
     <link href="https://unpkg.com/ionicons@4.2.1/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37614837-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-37614837-2');
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <link rel="shortcut icon" type="image/png" href="/resources/img/favicon.png"/>
     <script> 
         $(function(){
@@ -75,7 +59,7 @@
                 </ul>
             </div>
             <div class="col span-2-of-3 span-form">
-                <form method="POST" action="resources/php/register.php" class="contact-form">
+                <form method="POST" action="resources/php/register.php" class="contact-form" onsubmit="checkRegister()">
                     <div class="row">
                         <div class="col span-1-of-3 labels">
                             <label for="name">Name</label>
@@ -97,15 +81,18 @@
                             <label for="email">Password</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="password" name="password" id="password" placeholder="Your Password" required>
+                            <input type="password" name="password" id="password" placeholder="Your Password" required onchange="passStr()">
                         </div>
+                    </div>
+                    <div class="row">
+                        <label id="passStr" style="display: block;text-align: center">Password Strength: </label>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3 labels">
                             <label for="email">Confirm Password</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Your Password" required>
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="Your Password" required onchange="passVerify()">
                         </div>
                     </div>
                     <div class="row">
@@ -115,6 +102,10 @@
                         <div class="col span-2-of-3">
                             <input type="phone" name="phone" id="phone" placeholder="Your phone number" required>
                         </div>
+                    </div>
+                    
+                    <div class="row">
+                        <label id="error" style="text-align: center;display:none;width: 100%"></label>
                     </div>
                     
                     <div class="row">
@@ -129,5 +120,6 @@
             </div>
         </div>
     </section>
+    <script src="resources/js/login-check.js"></script>
 </body>
 </html>
