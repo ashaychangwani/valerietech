@@ -46,7 +46,7 @@ $(document).ready(function(){
             $('nav').removeClass('sticky-nav');
         }
     },{
-        offset: '100px'
+        offset: '400px'
     });
     
      
