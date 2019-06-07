@@ -209,6 +209,8 @@
         border-top: 3px #90cffe double;
         border-right: 3px #90cffe double;
         border-left: 3px #90cffe double;
+        font-size: 130%;
+        padding: 0 3%;
     }
     .mobile-nav-icon{
         display: inline-block;
@@ -257,7 +259,7 @@
     
     .offer{
         width: 75%;
-        margin-left: 15%;
+        margin-left: 13%;
         padding: 10px 10px;
     }
     
