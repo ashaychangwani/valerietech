@@ -24,6 +24,10 @@
     .offer{
         width:100%;
     }
+    
+    .row-offer{
+        width: 80%;
+    }
 }
 
 
@@ -89,6 +93,7 @@
     }
     .row-offer{
         margin-top: 0;
+        width: 100%;
     }
     .logo{
         margin-top: 20px;

@@ -51,6 +51,9 @@ h1:active,h2:active,h3:active,h4:active,p:active{
     margin: 0 auto;
 }
 
+.row-offer{
+    width: 80%;
+}
 .section{
     margin-top: 70px;
     margin-bottom: 60px;
